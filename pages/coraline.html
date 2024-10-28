@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laika</title>
-    <!------------------- Biblioteca de iconos que permite a los desarrolladores web incorporar iconos vectoriales y fuentes en sus proyectos de manera sencilla. Font Awesome 4 -------------------------->
+    <!------------------- Herramienta online para importar iconos Font Awesome 4 -------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/styles-page.css">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
                 <li>
                     <a class="nav-header__menu-item" href="#">PELÍCULAS</a>
                     <ul class="nav-header__dropdown">
-                        <li><a href="pages/coraline.html">Coraline</a></li>
+                        <li><a href="coraline.html">Coraline</a></li>
                         <li><a href="#">ParaNorman</a></li>
                         <li><a href="#">BoxTrolls</a></li>
                         <li><a href="#">Kubo</a></li>
@@ -44,56 +45,43 @@
 
     <!------------------- MAIN -------------------------->
     <main class="container-main">
+
         <!------------------- GUIA NAVEGACIÓN -------------------------->
         <div class="container-nav-guide">
-            <h1>Estudio Laika</h1>
+            <p>Películas<span> - </span> Los mundos de Coraline</p>
         </div>
 
         <!------------------- SECTION 1 -------------------------->
-        <section class="section1-main">
-            <img src="public/cartelera1.jpg" alt="">
+        <section class="section-cartelera">
+            <img src="public/cartelera-coraline.jpg" alt="">
+            <div class="container-information">
+                <h2 class="container-information__tittle"> CORALINE</h2>
+                <p>Coraline es una niña de 11 años que descubre un pasaje que lleva a una versión "mejorada" de su
+                    vida. Sin embargo, no todo es lo que parece.
+                </p>
+                <ul>
+                    <li><span>1 h 40 min</span></li>
+                    <li><span>2009</span></li>
+                    <li><span>13+</span></li>
+                </ul>
+            </div>
         </section>
 
         <!------------------- SECTION 2 -------------------------->
-        <section class="section-articles">
-            <article class="section-articles__article">
-                <a href="#"> <img src="public/articulo-1.jpg" alt="">
-                    <h2>Nuestro equipo</h2>
-                </a>
-            </article>
-            <article class="section-articles__article">
-                <a href="#"><img src="public/articulo-2.jpg" alt="">
-                    <h2>Colección</h2>
-                </a>
-            </article>
-            <article class="section-articles__article">
-                <a href="#"><img src="public/articulo-3.jpg" alt="">
-                    <h2>Tienda</h2>
-                </a>
-            </article>
+        <section class="section-reparto">
+
+            <div class="reparto__card">
+                <img src="public/fondo1.png" alt="">
+            </div>
+            <div class="reparto__card">
+                <img src="public/fondo2.png" alt="">
+            </div>
+            <div class="reparto__card">
+                <img src="public/fondo3.png" alt="">
+            </div>
+
         </section>
 
-        <!------------------- SECTION 3 -------------------------->
-        <section class="section-films">
-            <h2>Nuestras películas</h2>
-            <div class="container-films">
-                <a href="pages/coraline.html">
-                    <img src="assets/svg/caroline-svg.svg" alt="svg de coraline">
-                </a>
-                <a href="#">
-                    <img src="assets/svg/paranorman-svg.svg" alt="svg de coraline">
-                </a>
-                <a href="#">
-                    <img src="assets/svg/boxtrolls-svg.svg" alt="svg de coraline">
-                </a>
-                <a href="#">
-                    <img src="assets/svg/kubo-svg.svg" alt="svg de coraline">
-                </a>
-                <a href="#">
-                    <img src="assets/svg/missinglink-svg.svg" alt="svg de coraline">
-                </a>
-            </div>
-        </section>
     </main>
 
     <!------------------- FOOTER -------------------------->
