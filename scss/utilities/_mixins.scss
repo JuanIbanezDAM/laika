@@ -1,0 +1,14 @@
+//Mixins
+
+
+//  display: flex       Defecto: row - nowarp
+@mixin flex-mix($direction: row, $wrap: nowrap) {
+    display: flex;
+    flex-wrap: $direction, $wraps;
+
+}
+
+//  text-align       Defecto: center
+@mixin text-align-mix($direction: center) {
+    text-align: $direction;
+}

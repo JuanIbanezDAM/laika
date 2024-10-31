@@ -1,4 +1,11 @@
 @import './utilities/variables';
+@import './utilities/mixins';
+
+@import './base/base';
+@import './base/fonts';
+@import './base/reset';
+
+@import './layout/header';
 
 
 // Ejemplo de uso de map-get
