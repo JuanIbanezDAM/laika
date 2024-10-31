@@ -11,19 +11,44 @@
 
 .nav-header {
     //  text-align, align-content       Defecto: center - center
-    @include align-mix();
     width: 80%;
+    padding: map-get($map: $space-x, $key: "xxs");
+    @include align-mix(end);
 
     ul {
-        display: inline-block;
-        position: relative;
 
-        a {
+        li {
+            display: inline-block;
+            position: relative;
+
+            a {
+                display: block;
+                @include align-mix();
+                padding: map-get($map: $space-x, $key: "xs");
+                font-size: map-get($map: $font-sizes, $key: 3);
+                background: map-get($map: $theme-back-colors, $key: "light");
+
+                &:hover {
+                    color: map-get($map: $colors, $key: "yellow");
+                }
+            }
+
+            &:hover .nav-header__dropdown {
+                display: block;
+            }
+        }
+    }
+
+    &__dropdown {
+        display: none;
+        width: 100%;
+        @include align-mix(initial);
+        position: absolute;
+        z-index: 999;
+        background-color: map-get($map: $theme-font-colors, $key: "ligth");
+
+        li {
             display: block;
-            @include align-mix();
-            padding: map-get($map: $space-x, $key: "xs");            
-            font-size: map-get($map: $font-sizes, $key: 3);
-            background: map-get($map: $theme-back-colors, $key: "light");
         }
     }
 }

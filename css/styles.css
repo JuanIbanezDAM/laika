@@ -1,0 +1,298 @@
+/*------------------- COLORES PRINCIPALES--------------------------*/
+/* 
+ligth-brown #ddcab7
+brown       #786343
+blue        #0d2c49
+yellow1     #c7a40e
+yellow2     #d8c615
+black       #1d1e20 
+*/
+
+/*------------------- ESTILOS GENERALES --------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* AGRUPAMIENTO DE SELECTORES */
+a,
+p,
+h1,
+h2,
+h3 {
+    font-family: sans-serif;
+}
+
+a {
+    font-size: 1.3em;
+    color: #1d1e20;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 2.3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border-radius: 0px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0.5em 2em;
+}
+
+button:hover {
+    border-radius: 0px;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    color: #ffffff;
+}
+
+footer {
+    background-image: url("../public/footer-img.jpg");
+}
+
+p::selection {
+    color: #ffffff;
+    background-color: #0d2c49;
+}
+
+p::first-letter {
+    text-transform: capitalize;
+}
+
+/*------------------- HEADER --------------------------*/
+.container-header {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 5em;
+}
+
+.logo-header {
+    width: 20%;
+    padding: 5px 0 0 0;
+}
+
+.nav-header {
+    width: 80%;
+    text-align: end;
+    align-content: center;
+}
+
+.nav-header ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-header ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4em;
+    background: #ffffff;
+    text-wrap: nowrap;
+}
+
+.nav-header ul li a:hover {
+    color: #c7a40e;
+}
+
+/* menú dropdown(desplegable) de las películas */
+.nav-header__dropdown li {
+    display: block;
+}
+
+.nav-header__dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color: #ffffff;
+    text-align: initial;
+}
+
+ul li:hover .nav-header__dropdown {
+    display: block;
+}
+
+/*------------------- MAIN --------------------------*/
+.container-main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/*----------SECTION 1 -------------*/
+.section1-main img {
+    width: 100%;
+    display: block;
+}
+
+/*----------SECTION 2 -------------*/
+.section-articles {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 100%;
+}
+
+.section-articles__article {
+    flex: 1;
+}
+
+.section-articles__article a {
+    display: flex;
+    position: relative;
+    filter: brightness(100%);
+}
+
+.section-articles__article a h2 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.section-articles__article a img {
+    width: 100%;
+}
+
+.section-articles__article a img:hover {
+    filter: brightness(50%);
+}
+
+/*----------SECTION 3 -------------*/
+
+.container-films {
+    display: flex;
+    justify-content: center;
+    padding: 4em;
+}
+
+.section-films {
+    text-align: center;
+    padding: 4em 0em 0em 0em;
+}
+
+.section-films h2 {
+    text-align: center;
+}
+
+.container-films a:hover .cls-1 {
+    fill: #c7a40e;
+    stroke-width: 0px;
+}
+
+.container-films a {
+    margin: 0.6em;
+}
+
+/*------------------- NEWSLETTER FORM --------------------------*/
+.container-form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.container-form__row input {
+    border-radius: 0px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    margin-bottom: 2px;
+}
+
+.container-form__row input:focus {
+    color: #ffffff;
+    background-color: #0d2c49;
+}
+
+.form_submit {
+    border-radius: 0px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0.5em 2em;
+}
+
+.form_submit:hover {
+    border-radius: 0px;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    color: #ffffff;
+}
+
+/*------------------- FOOTER --------------------------*/
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-footer {
+    flex: 1;
+}
+
+.section-footer h3 {
+    font-size: 2em;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
+}
+
+.section-footer p {
+    color: #ffffff;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.section-footer__list-item {
+    padding: 0;
+}
+
+/* SELECTOR ANIDADO COMÚN */
+.section-footer__list-item li {
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+/* ANIDAMIENTO DE SELECTORES HIJOS */
+.section-footer__list-item>li>a {
+    color: #ffffff;
+
+}

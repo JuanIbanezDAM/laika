@@ -1,3 +1,5 @@
+// Resets
+
 @import './utilities/variables';
 @import './utilities/mixins';
 
@@ -6,6 +8,12 @@
 @import './base/reset';
 
 @import './layout/header';
+@import './layout/footer';
+
+@import './components/buttons';
+@import './components/form';
+
+
 
 
 // Ejemplo de uso de map-get
