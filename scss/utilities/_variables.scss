@@ -1,0 +1,61 @@
+// Variables
+
+/*------------------- Colores --------------------------*/
+$colors: (
+    "blue-dark": #0d2c49,
+    "black": #1d1e20,
+    "black-full": #000000,
+    "white": #dfdfdf,
+    "white-full": #ffffff,
+    "yellow": #d8c615,
+    "yellow-dark": #c7a40e
+);
+
+// Temas claro / oscuro
+$light: map-get($map: $colors, $key: white);
+$dark: map-get($map: $colors, $key: black);
+
+// Tema para los fondos
+$theme-back-colors: (
+    "light": $light,
+    "dark": $dark
+);
+
+// Tema para las letras
+$theme-font-colors: (
+    "light": $dark,
+    "dark": $light
+);
+
+/*------------------- Fuentes --------------------------*/
+
+//Tamanio de las fuentes
+$font-sizes: (
+    1: 1em,
+    2: 1.3em,
+    3: 1.6em,
+    4: 2em,
+    5: 2.3em,
+    6: 2.5em
+);
+
+//Peso de las fuentes
+$font-weights: (
+    1: 100,
+    2: 300,
+    3: 500,
+    4: 700,
+    5: 900
+);
+
+/*------------------- Margenes o Paddings --------------------------*/
+
+$space: (
+    "xxs": 0.5em,
+    "xs": 0.7em,
+    "s": 0.9em,
+    "m": 1.2em,
+    "l": 1.5em,
+    "xl": 1.9em,
+    "xxl": 2.3em
+);
