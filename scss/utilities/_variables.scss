@@ -12,8 +12,8 @@ $colors: (
 );
 
 // Temas claro / oscuro
-$light: map-get($map: $colors, $key: white);
-$dark: map-get($map: $colors, $key: black);
+$light: map-get($map: $colors, $key: "white");
+$dark: map-get($map: $colors, $key: "black");
 
 // Tema para los fondos
 $theme-back-colors: (
@@ -49,13 +49,34 @@ $font-weights: (
 );
 
 /*------------------- Margenes o Paddings --------------------------*/
+// Vertical
+$space-y: (
+    "xxs": 0.5em 0,
+    "xs": 0.7em 0,
+    "s": 0.9em 0,
+    "m": 1.2em 0,
+    "l": 1.5em 0,
+    "xl": 1.9em 0,
+    "xxl": 2.3em 0
+);
+
+// Horizontal
+$space-x: (
+    "xxs": 0 0.5em,
+    "xs": 0 0.7em,
+    "s": 0 0.9em,
+    "m": 0 1.2em,
+    "l" :0 1.5em,
+    "xl": 0 1.9em,
+    "xxl": 0 2.3em
+);
 
 $space: (
     "xxs": 0.5em,
     "xs": 0.7em,
     "s": 0.9em,
     "m": 1.2em,
-    "l": 1.5em,
+    "l" :1.5em,
     "xl": 1.9em,
     "xxl": 2.3em
 );

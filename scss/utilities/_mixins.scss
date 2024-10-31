@@ -4,11 +4,12 @@
 //  display: flex       Defecto: row - nowarp
 @mixin flex-mix($direction: row, $wrap: nowrap) {
     display: flex;
-    flex-wrap: $direction, $wraps;
+    flex-wrap: $direction, $wrap;
 
 }
 
-//  text-align       Defecto: center
-@mixin text-align-mix($direction: center) {
+//  text-align, align-content       Defecto: center - center
+@mixin align-mix($direction: center, $content: center) {
     text-align: $direction;
+    align-content: $content;
 }

@@ -1,0 +1,29 @@
+.container-header {
+    //  display: flex       Defecto: row - nowarp
+    @include flex-mix();
+    padding: map-get($map: $space-x, $key: "xxs");
+}
+
+.logo-header {
+    width: 20%;
+    padding: map-get($map: $space-x, $key: "xxs");
+}
+
+.nav-header {
+    //  text-align, align-content       Defecto: center - center
+    @include align-mix();
+    width: 80%;
+
+    ul {
+        display: inline-block;
+        position: relative;
+
+        a {
+            display: block;
+            @include align-mix();
+            padding: map-get($map: $space-x, $key: "xs");            
+            font-size: map-get($map: $font-sizes, $key: 3);
+            background: map-get($map: $theme-back-colors, $key: "light");
+        }
+    }
+}
