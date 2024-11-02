@@ -5,14 +5,14 @@
 @import './utilities/mixins';
 
 //Base
+@import './base/reset';
 @import './base/base';
 @import './base/fonts';
-@import './base/reset';
-
-//Layouts
-@import './layout/header';
-@import './layout/footer';
 
 //Componentes
 @import './components/buttons';
 @import './components/form';
+
+//Layouts
+@import './layout/header';
+@import './layout/footer';

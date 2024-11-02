@@ -10,6 +10,11 @@
     &__logo {
         width: 20%;
         padding: map-get($map: $space-x, $key: "xxs");
+        a {
+            img {
+                height: 70px;
+            }
+        }
     }
 
     &__nav {
@@ -64,6 +69,10 @@
             display: block;
             padding: map-get($map: $space, $key: "xxs");
             @include align-mix();
+       
+            &:hover {
+                color: map-get($map: $colors, $key: "yellow");
+            }
         }
     }
 }

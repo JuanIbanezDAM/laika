@@ -1,1 +1,25 @@
 // Formularios
+
+.container-form {
+    @include flex-mix(column);
+    @include align-mix();
+    justify-content: space-evenly;
+
+    &__column {
+        display: grid;
+        input {
+            background-color: map-get($map: $theme-back-colors, $key: "light");
+            @include border-mix(map-get($map: $border-sizes, $key: 2));
+
+
+            &:focus {
+                color: map-get($map: $theme-back-colors, $key: "light");
+                background-color: map-get($map: $colors, $key: "blue-dark");
+            }
+        }
+
+    }
+
+
+
+}

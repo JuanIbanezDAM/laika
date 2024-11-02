@@ -12,3 +12,12 @@
     text-align: $direction;
     align-content: $content;
 }
+
+//  border       Defecto: 1px - solid - black
+@mixin border-mix (
+    $px: map-get($map: $border-sizes, $key: 1),
+    $type: solid,
+    $colr: map-get($map: $theme-font-colors, $key: "light")) 
+    {
+    border: $px $type $colr;
+}

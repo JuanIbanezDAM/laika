@@ -12,7 +12,7 @@ $colors: (
 );
 
 // Temas claro / oscuro
-$light: map-get($map: $colors, $key: "white");
+$light: map-get($map: $colors, $key: "white-full");
 $dark: map-get($map: $colors, $key: "black");
 
 // Tema para los fondos
@@ -28,6 +28,9 @@ $theme-font-colors: (
 );
 
 /*------------------- Fuentes --------------------------*/
+
+//Font family
+$font-familys: 'Roboto', sans-serif;
 
 //Tamanio de las fuentes
 $font-sizes: (
@@ -79,4 +82,11 @@ $space: (
     "l" :1.5em,
     "xl": 1.9em,
     "xxl": 2.3em
+);
+
+// Bordes
+
+$border-sizes: (
+    1: 1px,
+    2: 2px,
 );

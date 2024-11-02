@@ -1,1 +1,34 @@
 // Fuentes
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-familys;
+  font-weight: map-get($map: $font-weights, $key: 4);
+  color: map-get($map: $theme-font-colors, $key: "light");
+}
+
+p, a, li, input {
+  font-family: $font-familys;
+  font-weight: map-get($map: $font-weights, $key: 3);
+  color: map-get($map: $theme-font-colors, $key: "light");
+}
+
+button, input {
+  font-family: $font-familys;
+  font-size: map-get($map: $font-sizes, $key: 3);
+  font-weight: map-get($map: $font-weights, $key: 4);
+}
+a {
+  font-size: map-get($map: $font-sizes, $key: 3);
+}
+
+h1 {
+  font-size: map-get($map: $font-sizes, $key: 6);
+}
+h2 {
+  font-size: map-get($map: $font-sizes, $key: 4);
+}
+h3 {
+  font-size: map-get($map: $font-sizes, $key: 3);
+}
