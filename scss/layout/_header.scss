@@ -5,21 +5,22 @@
 .container-header {
     width: 100%;
     @include flex-mix(); //  display: flex       Defecto: row - nowarp
-    padding: map-get($map: $space-x, $key: "xxs");
+    padding: map-get($map: $space, $key: "xxs");
 
     &__logo {
         width: 20%;
         padding: map-get($map: $space-x, $key: "xxs");
         a {
             img {
-                height: 70px;
+                display: block;
+                height: 50px;
             }
         }
     }
 
     &__nav {
         width: 80%;
-        @include align-mix(end); //  text-align, align-content       Defecto: center - center
+        @include align-mix(end, end); //  text-align, align-content       Defecto: center - center
         padding: map-get($map: $space-x, $key: "xxs");
 
         .nav-list {
@@ -59,16 +60,18 @@
     display: none;
     width: 100%;
     position: absolute;
+    padding: map-get($map: $space-x, $key: "m");
     @include align-mix(initial);
-    background-color: map-get($map: $theme-back-colors, $key: "ligth");
+    background-color: map-get($map: $theme-back-colors, $key: "light");
     z-index: 999;
 
     li{
         display: block;
         .dropdown-link{
+            font-size: map-get($map: $font-sizes, $key: 3);
             display: block;
             padding: map-get($map: $space, $key: "xxs");
-            @include align-mix();
+            @include align-mix(initial);
        
             &:hover {
                 color: map-get($map: $colors, $key: "yellow");
