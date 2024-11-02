@@ -1,54 +1,69 @@
+//Header
+
+//Contenedor general     logo 20% - nav 80%
+
 .container-header {
-    //  display: flex       Defecto: row - nowarp
-    @include flex-mix();
+    width: 100%;
+    @include flex-mix(); //  display: flex       Defecto: row - nowarp
     padding: map-get($map: $space-x, $key: "xxs");
-}
 
-.logo-header {
-    width: 20%;
-    padding: map-get($map: $space-x, $key: "xxs");
-}
+    &__logo {
+        width: 20%;
+        padding: map-get($map: $space-x, $key: "xxs");
+    }
 
-.nav-header {
-    //  text-align, align-content       Defecto: center - center
-    width: 80%;
-    padding: map-get($map: $space-x, $key: "xxs");
-    @include align-mix(end);
+    &__nav {
+        width: 80%;
+        @include align-mix(end); //  text-align, align-content       Defecto: center - center
+        padding: map-get($map: $space-x, $key: "xxs");
 
-    ul {
+        .nav-list {
 
-        li {
-            display: inline-block;
-            position: relative;
+            li {
+                display: inline-block;
+                position: relative;
 
-            a {
-                display: block;
-                @include align-mix();
-                padding: map-get($map: $space-x, $key: "xs");
-                font-size: map-get($map: $font-sizes, $key: 3);
-                background: map-get($map: $theme-back-colors, $key: "light");
+                .nav-link {
+                    display: block;
+                    @include align-mix();
+                    padding: map-get($map: $space-x, $key: "m");
+                    font-size: map-get($map: $font-sizes, $key: 3);
+                    background: map-get($map: $theme-back-colors, $key: "ligth");
+                    text-wrap: nowrap;
 
-                &:hover {
-                    color: map-get($map: $colors, $key: "yellow");
+                    &:hover {
+                        color: map-get($map: $colors, $key: "yellow");
+                    }
                 }
-            }
 
-            &:hover .nav-header__dropdown {
-                display: block;
+                .nav-icon {
+                    @extend .nav-link;
+                }
+
+                //hover para desplegar el menu peliculas
+                &:hover .nav-dropdown{
+                    display: grid;
+                }
             }
         }
     }
+}
 
-    &__dropdown {
-        display: none;
-        width: 100%;
-        @include align-mix(initial);
-        position: absolute;
-        z-index: 999;
-        background-color: map-get($map: $theme-font-colors, $key: "ligth");
+// Menu dropdwon de peliculas
+.nav-dropdown{
+    display: none;
+    width: 100%;
+    position: absolute;
+    @include align-mix(initial);
+    background-color: map-get($map: $theme-back-colors, $key: "ligth");
+    z-index: 999;
 
-        li {
+    li{
+        display: block;
+        .dropdown-link{
             display: block;
+            padding: map-get($map: $space, $key: "xxs");
+            @include align-mix();
         }
     }
 }

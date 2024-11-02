@@ -14,30 +14,40 @@
 
     <!------------------- HEADER -------------------------->
     <header class="container-header">
-
         <!------------------- LOGO -------------------------->
-        <div class="logo-header">
-            <h1><a href="index.html"><img class="logo-header" src="assets/images/logo-png.png" alt=""></a></h1>
+        <div class="container-header__logo">
+            <a href="index.html">
+                <img class="container-header__logo-image" src="assets/images/logo-png.png" alt="Logo de la empresa">
+                <h1 class="visually-hidden">Laika</h1>
+            </a>
         </div>
 
         <!------------------- NAVBAR -------------------------->
-        <nav class="nav-header">
-            <ul>
+        <nav class="container-header__nav">
+            <ul class="nav-list">
                 <li>
-                    <a class="nav-header__menu-item" href="#">PELÍCULAS</a>
-                    <ul class="nav-header__dropdown">
-                        <li><a href="pages/coraline.html">Coraline</a></li>
-                        <li><a href="#">ParaNorman</a></li>
-                        <li><a href="#">BoxTrolls</a></li>
-                        <li><a href="#">Kubo</a></li>
-                        <li><a href="#">Missing Link</a></li>
+                    <a class="nav-link" href="#">PELÍCULAS</a>
+                    <ul class="nav-dropdown">
+                        <li><a class="dropdown-link" href="pages/coraline.html">Coraline</a></li>
+                        <li><a class="dropdown-link" href="#">ParaNorman</a></li>
+                        <li><a class="dropdown-link" href="#">BoxTrolls</a></li>
+                        <li><a class="dropdown-link" href="#">Kubo</a></li>
+                        <li><a class="dropdown-link" href="#">Missing Link</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-header__menu-item" href="#">NOTICIAS</a></li>
-                <li><a class="nav-header__menu-item" href="#">CATÁLOGO</a></li>
-                <li><a class="nav-header__menu-item" href="#">QUIENES SOMOS</a></li>
-                <li><a class="nav-header__menu-item--icon" href="#"><i class="fa fa-search"></i></a></li>
-                <li><a class="nav-header__menu-item--icon" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#">NOTICIAS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CATÁLOGO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">QUIENES SOMOS</a></li>
+                <li class="nav-item">
+                    <a class="nav-icon" href="#" aria-label="Buscar">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-icon" href="#" aria-label="Carrito de compras">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>

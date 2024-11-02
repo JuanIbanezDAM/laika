@@ -1,10 +1,9 @@
 //Mixins
 
-
 //  display: flex       Defecto: row - nowarp
 @mixin flex-mix($direction: row, $wrap: nowrap) {
     display: flex;
-    flex-wrap: $direction, $wrap;
+    flex-flow: $direction $wrap;
 
 }
 
