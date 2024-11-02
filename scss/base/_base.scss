@@ -1,1 +1,77 @@
 // Base
+
+//Main
+
+.container-main {
+
+    //Seccion 1
+    .section-main {
+        width: 1920px;
+        height: 800px;
+        overflow: hidden;
+
+        img {
+            width: 1920px;
+            height: auto;
+        }
+    }
+
+    //Seccion 2
+    .section-films {
+        text-align: center;
+
+        h2 {
+            font-size: map-get($map: $font-sizes, $key: 4);
+            padding: map-get($map: $space-y, $key: "xxs");
+        }
+
+        .container-films {
+            @include flex-mix(row);
+            justify-content: center;
+            padding: map-get($map: $space, $key: l);
+
+            a {
+                flex: 1;
+
+          /*       &:hover .cls-1 {
+                    fill: #c7a40e;
+                    stroke-width: 0px;
+                } */
+            }
+        }
+    }
+
+    //Seccion 3
+    .section-articles {
+        @include flex-mix();
+        max-width: 100%;
+
+        &__article {
+            flex: 1;
+
+            a {
+                display: flex;
+                position: relative;
+                filter: brightness(100%);
+
+                img {
+                    width: 100%;
+
+                    &:hover {
+                        filter: brightness(50%);
+                    }
+                }
+
+                h2 {
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    padding: map-get($map: $space-x, $key: "xxs");
+                    background-color: map-get($map: $colors, $key: "black-transparent");
+                    color: map-get($map: $colors, $key: "white");
+                    border-color: #ffffff;
+                }
+            }
+        }
+    }
+}
