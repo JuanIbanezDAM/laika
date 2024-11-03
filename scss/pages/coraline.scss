@@ -37,6 +37,7 @@
             }
 
             p,
+            ul,
             span {
                 color: map-get($map: $colors, $key: "white");
                 padding: map-get($map: $space-y, $key: "xxs");
@@ -45,6 +46,35 @@
             ul {
                 @include flex-mix();
                 gap: 5em;
+
+                li {
+                    .trailer-label {
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: opacity 0.3s ease;
+                    }
+
+                    .add-label {
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: opacity 0.3s ease;
+                    }
+
+                    .trailer-button {
+                        &:hover+.trailer-label {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    .add-button {
+                        &:hover+.add-label {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                }
             }
         }
     }
@@ -65,6 +95,7 @@
         &__galery {
             width: 65%;
             margin: 0 auto;
+
             img {
                 width: 100%;
                 padding: map-get($map: $space-y, $key: "xs");
