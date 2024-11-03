@@ -49,7 +49,8 @@
 
     // SECTION 2 Comparacion de formatos de imagen
     .section-ejercicio1 {
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
         padding: map-get($map: $space-y, $key: "xl"); // devuelve 1.9em 0
 
         //Comentar o dedscomentar para añadir un fondo y ver como afecta a las imagenes con fondo transparente
@@ -57,7 +58,7 @@
 
         .container-formatos {
             display: grid;
-            grid-template-columns: 500px 500px 500px;// Ancho de cada columna
+            grid-template-columns: auto auto auto;// Ancho de cada columna
             gap: 1em;
             justify-content: space-evenly;
 
