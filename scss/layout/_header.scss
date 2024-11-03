@@ -3,7 +3,6 @@
 //Contenedor general     logo 20% - nav 80%
 
 .container-header {
-    width: 100%;
     @include flex-mix(); //  display: flex       Defecto: row - nowarp
     padding: map-get($map: $space, $key: "xxs");
 
@@ -51,6 +50,9 @@
                     display: grid;
                 }
             }
+          /*   .nav-search{
+                display: flex;
+            } */
         }
     }
 }
