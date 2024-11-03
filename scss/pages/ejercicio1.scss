@@ -1,0 +1,69 @@
+// Ejercicio 1 page
+
+//Main 
+.container-main {
+
+    .section-main {
+        position: relative;
+        /* Uso position relative y absolute para superponer el elemento con texto informativo 
+         sobre el contenedor*/
+
+        .container-information {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+
+            background-color: rgba(0, 0, 0, 0.7); // el 0.7 es la opacidad
+            padding: map-get($map: $space, $key: "xl"); // devuelve 1.9em
+            /*  según al nomber de la variable que he asignado:
+                $space: añade padding vertical y horizontal
+                $space-y: padding vertical
+                $space-x: padding horizontal */
+
+            h1 {
+                color: map-get($map: $colors, $key: "yellow"); // devuelve #d8c615
+                padding: map-get($map: $space-y, $key: "xxs"); // devuelve 0.5em 0
+            }
+
+            h2 {
+                color: map-get($map: $colors, $key: "white"); // devuelve #ffffff
+            }
+
+            p {
+                color: map-get($map: $colors, $key: "white"); // devuelve #d8c615
+                padding: map-get($map: $space-y, $key: "xxs"); // devuelve 0.5em 0
+            }
+
+            ul,
+            span {
+                color: map-get($map: $colors, $key: "white"); // devuelve #fffff
+                padding: map-get($map: $space, $key: "xxs"); // devuelve 0.5em
+            }
+
+        }
+    }
+
+    .section-ejercicio1 {
+        width: 100%;
+        padding: map-get($map: $space-y, $key: "xl"); // devuelve 1.9em 0
+
+        /* background-image: url('../assets/images/coraline-page-fondo2-webp.webp'); */
+
+        .container-formatos {
+            @include flex-mix(); //  display: flex       Defecto: row - nowarp
+            justify-content: space-evenly;
+
+            &__formato {
+                @include flex-mix(column); //  display: flex       Defecto: column - nowarp
+                align-items: center;
+                img {
+                    margin: map-get($map: $space, $key: "xs");
+                }
+
+                ul {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

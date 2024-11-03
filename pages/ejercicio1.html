@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laika</title>
+    <!------------------- Herramienta online para importar iconos Font Awesome 4 -------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Estilos especificos de la pagaina -->
+    <link rel="stylesheet" href="../css/ejercicio1.css">
+
+</head>
+
+<body>
+
+    <!------------------- HEADER -------------------------->
+    <header class="container-header">
+        <!------------------- LOGO -------------------------->
+        <div class="container-header__logo">
+            <a href="../index.html">
+                <img class="container-header__logo-image" src="../assets/images/logo-png.png" alt="Logo de la empresa">
+            </a>
+        </div>
+
+        <!------------------- NAVBAR -------------------------->
+        <nav class="container-header__nav">
+            <ul class="nav-list">
+                <li>
+                    <a class="nav-link films-page" href="#">PELÍCULAS</a>
+                    <ul class="nav-dropdown">
+                        <li><a class="dropdown-link coraline-page" href="#">Coraline</a></li>
+                        <li><a class="dropdown-link paranorman-page" href="#">ParaNorman</a></li>
+                        <li><a class="dropdown-link boxtrolls-page" href="#">BoxTrolls</a></li>
+                        <li><a class="dropdown-link kubo-page" href="#">Kubo</a></li>
+                        <li><a class="dropdown-link missinglink-page" href="#">Missing Link</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link news-page" href="#">NOTICIAS</a></li>
+                <li><a class="nav-link catalog-page" href="#">CATÁLOGO</a></li>
+                <li><a class="nav-link us-page" href="#">QUIENES SOMOS</a></li>
+                <li class="nav-search">
+                    <a class="nav-icon" href="#" aria-label="Buscar">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-icon" href="#" aria-label="Carrito de compras">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!------------------- MAIN -------------------------->
+    <main class="container-main">
+        <!------------------- SECTION 1 Cartelera informacion del ejercicio -------------------------->
+        <section class="section-main">
+            <img src="../assets/images/coraline-page-cartelera1-jpg.jpg" alt="Cartelera de la pelicula coraline">
+            <div class="container-information">
+                <h1>Comparación de Formatos de Imagen en la Web</h1>
+                <p>Crea una nueva página en tu proyecto de sitio web de películas que contenga una
+                    imagen y un texto explicativo. Sigue los pasos a continuación para aplicar lo aprendido
+                    sobre formatos de imagen, optimización y maquetación.
+                </p>
+                <h2>1. Imagen en Diferentes Formatos</h2>
+                <ul>
+                    <li>
+                        <span>a. Incluye la misma imagen en varios formatos (JPEG, PNG, WebP, etc.)
+                            según lo visto en clase. SVG otra imagen, con su conversión a PNG.
+                        </span>
+                    </li>
+                    <li>
+                        <span>b. Muestra cada formato en la página para poder compararlos entre sí</p>
+                    </li>
+                </ul>
+
+                <h2>2. Texto Informativo</h2>
+                <ul>
+                    <li>
+                        <span><strong>Tiempo de carga de la imagen: </strong>Usa la consola del navegador
+                            para ver cuánto tarda cada imagen en cargar y anota ese tiempo.
+                        </span>
+                    </li>
+                    <li>
+                        <span><strong>Peso de la imagen: </strong>Muestra el tamaño del archivo en KB/MB para
+                            cada formato.
+                        </span>
+                    </li>
+                    <li>
+                        <span><strong>Comentario sobre la calidad: </strong>Describe la calidad de cada
+                            formato, si notas alguna diferencia visual (por ejemplo, si se ve
+                            más clara o más pixelada).
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!------------------- SECTION 2 Comparacion de formatos de -------------------------->
+        <section class="section-ejercicio1">
+            <div class="container-formatos">
+
+                <!-- columna formato png -->
+                <div class="container-formatos__formato formato-png">
+                    <h3>png</h3>
+                    <img src="../assets/images/logo-png.png" alt="">
+                    <ul>
+                        <li>
+                            <p>Tiempo:</p>
+                        </li>
+                        <li>
+                            <p>Peso:</p>
+                        </li>
+                        <li>
+                            <p>Comentario:</p>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- columna formato jpg -->
+                <div class="container-formatos__formato formato-jpg">
+                    <h3>jpg</h3>
+                    <img src="../assets/images/logo-jpg.jpg" alt="">
+                    <ul>
+                        <li>
+                            <p>Tiempo:</p>
+                        </li>
+                        <li>
+                            <p>Peso:</p>
+                        </li>
+                        <li>
+                            <p>Comentario:</p>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- columna formato webp -->
+                <div class="container-formatos__formato formato-webp">
+                    <h3>webp</h3>
+                    <img src="../assets/images/logo-webp.webp" alt="">
+                    <ul>
+                        <li>
+                            <p>Tiempo:</p>
+                        </li>
+                        <li>
+                            <p>Peso:</p>
+                        </li>
+                        <li>
+                            <p>Comentario:</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+    <!------------------- FOOTER -------------------------->
+    <footer>
+        <div class="container-footer">
+            <div class="section-footer">
+                <h3>Tienda</h3>
+                <ul class="section-footer__list-item">
+                    <li><a href="#">Ropa</a></li>
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="#">Moñecos</a></li>
+                    <li><a href="#">Ropa</a></li>
+                </ul>
+            </div>
+            <div class="section-footer">
+                <h3>Información</h3>
+                <ul class="section-footer__list-item">
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#"> <span> &#169;</span> Copyrigth 2024</a></li>
+                </ul>
+            </div>
+            <!------------------- FORM -------------------------->
+            <div class="section-footer">
+                <h3>Newsletter</h3>
+                <form action="action_page.php" class="container-form">
+                    <div class="container-form__column">
+                        <input type="text" placeholder="Nombre" name="name" required>
+                        <input type="text" placeholder="Email" name="mail" required>
+                    </div>
+
+                    <div class="container-form__column">
+                        <input type="submit" value="Enviar" class="form-submit button-pre">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
