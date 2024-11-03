@@ -7,38 +7,49 @@
     <title>Laika</title>
     <!------------------- Herramienta online para importar iconos Font Awesome 4 -------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="src/styles.css">
-    <link rel="stylesheet" href="src/styles-page.css">
+    <!-- Estilos genrales -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Estilos especificos de la pagaina -->
+    <link rel="stylesheet" href="../css/coraline.css">
 </head>
 
 <body>
 
     <!------------------- HEADER -------------------------->
     <header class="container-header">
-
         <!------------------- LOGO -------------------------->
-        <div class="logo-header">
-            <h1><a href="index.html"><img class="logo-header" src="public/logo.png" alt=""></a></h1>
+        <div class="container-header__logo">
+            <a href="../index.html">
+                <img class="container-header__logo-image" src="../assets/images/logo-png.png" alt="Logo de la empresa">
+            </a>
         </div>
 
         <!------------------- NAVBAR -------------------------->
-        <nav class="nav-header">
-            <ul>
+        <nav class="container-header__nav">
+            <ul class="nav-list">
                 <li>
-                    <a class="nav-header__menu-item" href="#">PELÍCULAS</a>
-                    <ul class="nav-header__dropdown">
-                        <li><a href="coraline.html">Coraline</a></li>
-                        <li><a href="#">ParaNorman</a></li>
-                        <li><a href="#">BoxTrolls</a></li>
-                        <li><a href="#">Kubo</a></li>
-                        <li><a href="#">Missing Link</a></li>
+                    <a class="nav-link films-page" href="#">PELÍCULAS</a>
+                    <ul class="nav-dropdown">
+                        <li><a class="dropdown-link coraline-page" href="#">Coraline</a></li>
+                        <li><a class="dropdown-link paranorman-page" href="#">ParaNorman</a></li>
+                        <li><a class="dropdown-link boxtrolls-page" href="#">BoxTrolls</a></li>
+                        <li><a class="dropdown-link kubo-page" href="#">Kubo</a></li>
+                        <li><a class="dropdown-link missinglink-page" href="#">Missing Link</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-header__menu-item" href="#">NOTICIAS</a></li>
-                <li><a class="nav-header__menu-item" href="#">CATÁLOGO</a></li>
-                <li><a class="nav-header__menu-item" href="#">QUIENES SOMOS</a></li>
-                <li><a class="nav-header__menu-item--icon" href="#"><i class="fa fa-search"></i></a></li>
-                <li><a class="nav-header__menu-item--icon" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a class="nav-link news-page" href="#">NOTICIAS</a></li>
+                <li><a class="nav-link catalog-page" href="#">CATÁLOGO</a></li>
+                <li><a class="nav-link us-page" href="#">QUIENES SOMOS</a></li>
+                <li class="nav-search">
+                    <a class="nav-icon" href="#" aria-label="Buscar">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-icon" href="#" aria-label="Carrito de compras">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -50,40 +61,23 @@
         <div class="container-nav-guide">
             <p>Películas<span> - </span> Los mundos de Coraline</p>
         </div>
-
         <!------------------- SECTION 1 -------------------------->
-        <section class="section-cartelera">
-            <img src="public/cartelera-coraline.jpg" alt="">
+        <section class="section-main">
+            <img src="../assets/images/coraline-page-cartelera1-jpg.jpg" alt="Cartelera de la pelicula coraline">
             <div class="container-information">
-                <h2 class="container-information__tittle"> CORALINE</h2>
+                <h2> CORALINE</h2>
                 <p>Coraline es una niña de 11 años que descubre un pasaje que lleva a una versión "mejorada" de su
                     vida. Sin embargo, no todo es lo que parece.
                 </p>
                 <ul>
-                    <li><span>1 h 40 min</span></li>
-                    <li><span>2009</span></li>
                     <li><span>13+</span></li>
+                    <li><span>2009</span></li>
+                    <li><span>1 h 40 min</span></li>
                 </ul>
             </div>
         </section>
 
-        <!------------------- SECTION 2 -------------------------->
-        <section class="section-reparto">
-
-            <div class="reparto__card">
-                <img src="public/fondo1.png" alt="">
-            </div>
-            <div class="reparto__card">
-                <img src="public/fondo2.png" alt="">
-            </div>
-            <div class="reparto__card">
-                <img src="public/fondo3.png" alt="">
-            </div>
-
-        </section>
-
     </main>
-
     <!------------------- FOOTER -------------------------->
     <footer>
         <div class="container-footer">
@@ -93,6 +87,7 @@
                     <li><a href="#">Ropa</a></li>
                     <li><a href="#">Libros</a></li>
                     <li><a href="#">Moñecos</a></li>
+                    <li><a href="#">Ropa</a></li>
                 </ul>
             </div>
             <div class="section-footer">
@@ -108,13 +103,13 @@
             <div class="section-footer">
                 <h3>Newsletter</h3>
                 <form action="action_page.php" class="container-form">
-                    <div class="container-form__row">
+                    <div class="container-form__column">
                         <input type="text" placeholder="Nombre" name="name" required>
                         <input type="text" placeholder="Email" name="mail" required>
                     </div>
 
-                    <div class="container-form__row">
-                        <input type="submit" value="Enviar" class="form_submit">
+                    <div class="container-form__column">
+                        <input type="submit" value="Enviar" class="form-submit button-pre">
                     </div>
                 </form>
             </div>

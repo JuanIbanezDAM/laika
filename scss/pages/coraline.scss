@@ -1,0 +1,50 @@
+// Coraline page
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+
+//Header
+.films-page {
+    color: map-get($map: $colors, $key: "yellow");
+}
+
+.coraline-page {
+    color: map-get($map: $colors, $key: "yellow");
+}
+
+//Main
+.container-main {
+
+    .container-nav-guide {
+        background-color: map-get($map: $theme-back-colors, $key: "light");
+        color: map-get($map: $theme-font-colors, $key: "light");
+        padding: map-get($map: $space-x, $key: "s");
+    }
+
+    .section-main {
+        position: relative;
+
+        .container-information {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            padding: map-get($map: $space, $key: xl);
+            background-color: rgba(0, 0, 0, 0.6);
+
+            h2 {
+                color: map-get($map: $colors, $key: "yellow");
+                padding: map-get($map: $space-y, $key: "xxs");
+            }
+            p,
+            span {
+                color: map-get($map: $colors, $key: "white");
+                padding: map-get($map: $space-y, $key: "xxs");
+            }
+
+            ul {
+                @include flex-mix();
+                gap: 5em;
+            }
+        }
+    }
+}
