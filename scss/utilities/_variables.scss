@@ -1,5 +1,10 @@
 // Variables
 
+/* !!!
+La mayor parte de elementos del proyecto usan estas variables para sus estilos
+cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principales, tamaños de de los títulos, márgenes por defecto de elementos html.
+ !!! */
+
 /*------------------- Colores --------------------------*/
 $colors: (
     "blue-dark": #0d2c49,
@@ -33,7 +38,7 @@ $theme-font-colors: (
 //Font family
 $font-familys: 'Roboto', sans-serif;
 
-//Tamanio de las fuentes
+//Tamaño de las fuentes
 $font-sizes: (
     1: 1em,
     2: 1.3em,

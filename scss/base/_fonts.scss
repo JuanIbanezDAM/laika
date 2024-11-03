@@ -1,24 +1,40 @@
-// Fuentes
+// Fonts
 
+//Importar la fuente Roboto de google
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-h1, h2, h3, h4, h5, h6 {
+//Estilos generales para las fuentes
+
+//Títulos
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-familys;
   font-weight: map-get($map: $font-weights, $key: 4);
   color: map-get($map: $theme-font-colors, $key: "light");
 }
 
-p, a, li, input {
+//Textos
+p,
+a,
+li {
   font-family: $font-familys;
   font-weight: map-get($map: $font-weights, $key: 3);
   color: map-get($map: $theme-font-colors, $key: "light");
 }
 
-button, input {
+//Botones y formularios
+button,
+input {
   font-family: $font-familys;
   font-size: map-get($map: $font-sizes, $key: 3);
   font-weight: map-get($map: $font-weights, $key: 4);
 }
+
+//Tamaños
 a {
   font-size: map-get($map: $font-sizes, $key: 3);
 }
@@ -26,9 +42,11 @@ a {
 h1 {
   font-size: map-get($map: $font-sizes, $key: 5);
 }
+
 h2 {
   font-size: map-get($map: $font-sizes, $key: 3);
 }
+
 h3 {
   font-size: map-get($map: $font-sizes, $key: 3);
 }
