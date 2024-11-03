@@ -45,18 +45,3 @@
 }
 
 /*------------------- SECTION 1 - REPARTO--------------------------*/
-.section-reparto {
-    background-color: #0d2c49;
-    display: flex;
-    flex-flow: row nowrap;
-    height: auto;
-}
-
-.reparto__card {
-    position: relative;
-    flex: 1;
-}
-
-.reparto__card>img {
-    max-width: 100%;
-}
