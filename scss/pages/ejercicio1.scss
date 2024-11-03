@@ -1,8 +1,12 @@
 // Ejercicio 1 page
 
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
 //Main 
 .container-main {
 
+    // SECTION 1 Cartelera informacion del ejercicio
     .section-main {
         position: relative;
         /* Uso position relative y absolute para superponer el elemento con texto informativo 
@@ -43,25 +47,39 @@
         }
     }
 
+    // SECTION 2 Comparacion de formatos de imagen
     .section-ejercicio1 {
         width: 100%;
         padding: map-get($map: $space-y, $key: "xl"); // devuelve 1.9em 0
 
+        //Comentar o dedscomentar para añadir un fondo y ver como afecta a las imagenes con fondo transparente
         /* background-image: url('../assets/images/coraline-page-fondo2-webp.webp'); */
 
         .container-formatos {
-            @include flex-mix(); //  display: flex       Defecto: row - nowarp
+            display: grid;
+            grid-template-columns: 500px 500px 500px;// Ancho de cada columna
+            gap: 1em;
             justify-content: space-evenly;
+
 
             &__formato {
                 @include flex-mix(column); //  display: flex       Defecto: column - nowarp
                 align-items: center;
+                padding: map-get($map: $space, $key: "xs");
+                box-shadow:
+                    8px 8px 20px rgba(0, 0, 0, 0.3), // Sombra exterior abajo a la derecha 
+                    inset 8px 8px 20px rgba(0, 0, 0, 0.2); //Sombra interior arriba a la izquierda 
+
                 img {
+                    max-width: 100%;
+                    width: auto;
+                    object-fit: cover; // Para que la imagen se adapte al contenedor
                     margin: map-get($map: $space, $key: "xs");
                 }
 
                 ul {
                     width: 100%;
+                    height: 100px;
                 }
             }
         }
