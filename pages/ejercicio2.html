@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laika</title>
     <!------------------- Herramienta online para importar iconos Font Awesome 4 -------------------------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <!-- Estilos generales -->
     <link rel="stylesheet" href="../css/main.css">
     <!-- Estilos especificos de la pagaina -->
-    <link rel="stylesheet" href="../css/ejercicio1.css">
+    <link rel="stylesheet" href="../css/ejercicio2.css">
 
 </head>
 
@@ -61,142 +61,101 @@
         <section class="section-main">
             <img src="../assets/images/coraline-page-cartelera1-jpg.jpg" alt="Cartelera de la pelicula coraline">
             <div class="container-information">
-                <h1>Comparación de Formatos de Imagen en la Web</h1>
-                <p>Crea una nueva página en tu proyecto de sitio web de películas que contenga una
-                    imagen y un texto explicativo. Sigue los pasos a continuación para aplicar lo aprendido
-                    sobre formatos de imagen, optimización y maquetación.
+                <h1>Comparación de Formatos de audio y video en la Web</h1>
+                <p>Crea una nueva sección en tu proyecto de sitio web de películas que contenga un
+                    archivo de audio y un vídeo. Sigue los pasos a continuación para aplicar lo
+                    aprendido sobre formatos de audio, vídeo, optimización y maquetación
                 </p>
-                <h2>1. Imagen en Diferentes Formatos</h2>
+                <h2>1. Incorporación de Audio y Video</h2>
                 <ul>
                     <li>
-                        <span>a. Incluye la misma imagen en varios formatos (JPEG, PNG, WebP, etc.)
-                            según lo visto en clase. SVG otra imagen, con su conversión a PNG.
+                        <span>a. Incluye un archivo de audio en varios formatos comunes (MP3, OGG,
+                            AAC) y un vídeo en varios formatos (MP4, WebM, OGV).
                         </span>
                     </li>
                     <li>
-                        <span>b. Muestra cada formato en la página para poder compararlos entre sí</p>
+                        <span>b. Asegúrate de utilizar el mismo archivo de audio convertido a los
+                            diferentes formatos para que la comparación sea precisa y videos al menos una resolución de
+                            720p o 1080p
+                        </span>
                     </li>
                 </ul>
-
                 <h2>2. Texto Informativo</h2>
                 <ul>
                     <li>
-                        <span><strong>Tiempo de carga de la imagen: </strong>Usa la consola del navegador
-                            para ver cuánto tarda cada imagen en cargar y anota ese tiempo.
-                        </span>
-                    </li>
-                    <li>
-                        <span><strong>Peso de la imagen: </strong>Muestra el tamaño del archivo en KB/MB para
-                            cada formato.
-                        </span>
-                    </li>
-                    <li>
-                        <span><strong>Comentario sobre la calidad: </strong>Describe la calidad de cada
-                            formato, si notas alguna diferencia visual (por ejemplo, si se ve
-                            más clara o más pixelada).
+                        <span>a. Debajo de cada vídeo, incluye un texto explicativo con la siguiente
+                            información: <strong>Tiempo de carga, Tamaño del archivo y Comentario sobre la calidad
+                            </strong>
                         </span>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <!------------------- SECTION 2 Comparacion de formatos de imagen -------------------------->
+        <!------------------- SECTION 2 Comparacion de formatos de audio y video -------------------------->
         <section class="section-ejercicio1">
             <div class="container-formatos">
 
-                <!-- columna formato png -->
-                <div class="container-formatos__formato formato-png">
-                    <h3>PNG</h3>
-                    <img src="../assets/images/logo-png1.png" alt="">
-                    <ul>
-                        <li>
-                            <p>Tiempo: 13 ms</p>
-                        </li>
-                        <li>
-                            <p>Peso: 52,6 KB</p>
-                        </li>
-                        <li>
-                            <p>Comentario: Alta calidad y soporte de transparencia</p>
-                        </li>
-                    </ul>
-                    <img src="../assets/images/portada-png1.png" alt="">
-                    <ul>
-                        <li>
-                            <p>Tiempo: 21 ms</p>
-                        </li>
-                        <li>
-                            <p>Peso: 3,16 MB</p>
-                        </li>
-                        <li>
-                            <p>Comentario: Tamaño de archivo mayor, lo que puede ralentizar el tiempo de carga.</p>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <!-- columna formato jpg -->
-                <div class="container-formatos__formato formato-jpg">
-                    <h3>JPG</h3>
-                    <img src="../assets/images/logo-jpg1.jpg" alt="">
-                    <ul>
-                        <li>
-                            <p>Tiempo: 21 ms</p>
-                        </li>
-                        <li>
-                            <p>Peso: 76,8 KB</p>
-                        </li>
-                        <li>
-                            <p>Comentario: No soporta transparencia</p>
-                        </li>
-                    </ul>
-                    <img src="../assets/images/portada-jpg1.jpg" alt="">
-                    <ul>
-                        <li>
-                            <p>Tiempo: 22 ms</p>
-                        </li>
-                        <li>
-                            <p>Peso: 667 KB</p>
-                        </li>
-                        <li>
-                            <p>Comentario: Archivos ligeros y adecuados para fotos, acelerando la carga en web.</p>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <!-- columna formato webp -->
-                <div class="container-formatos__formato formato-webp">
-                    <h3>WEBP</h3>
-                    <img src="../assets/images/logo-webp1.webp" alt="">
-                    <ul>
-                        <li>
-                            <p>Tiempo: 17 ms</p>
-                        </li>
-                        <li>
-                            <p>Peso: 35,7 KB</p>
-                        </li>
-                        <li>
-                            <p>Comentario: Combina compresión eficiente y transparencia, con tamaños más pequeños que
-                                PNG y JPG.</p>
-                        </li>
-                    </ul>
-                    <img src="../assets/images/portada-webp1.webp" alt="">
+                <!-- columna formato MP3 -->
+                <div class="container-formatos__formato formato-mp3">
+                    <h3>MP3</h3>
+                    <audio controls>
+                        <source src="../assets/audio/funny-cat-meow-mp3.mp3" type="audio/mp3">
+                    </audio>
                     <ul>
                         <li>
                             <p>Tiempo: 18 ms</p>
                         </li>
                         <li>
-                            <p>Peso: 409 KB</p>
+                            <p>Peso: 40,0 KB</p>
                         </li>
                         <li>
-                            <p>Comentario: Rápidos en tiempo de carga.</p>
+                            <p>Comentario:</p>
                         </li>
                     </ul>
-
                 </div>
 
-                <div class="container-formatos__formato formato-svg">
-                    <h3>SVG</h3>
+                <!-- columna formato OGG -->
+                <div class="container-formatos__formato formato-ogg">
+                    <h3>OGG</h3>
+                    <audio controls>
+                        <source src="../assets/audio/funny-cat-meow-ogg.ogg" type="audio/mp3">
+                    </audio>
+                    <ul>
+                        <li>
+                            <p>Tiempo: 12 ms</p>
+                        </li>
+                        <li>
+                            <p>Peso: 13,2 KB</p>
+                        </li>
+                        <li>
+                            <p>Comentario:</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- columna formato AAC -->
+                <div class="container-formatos__formato formato-aac">
+                    <h3>AAC</h3>
+                    <audio controls>
+                        <source src="../assets/audio/funny-cat-meow-aac.aac" type="audio/mp3">
+                    </audio>
+                    <ul>
+                        <li>
+                            <p>Tiempo: 11 ms</p>
+                        </li>
+                        <li>
+                            <p>Peso: 19,0 KB</p>
+                        </li>
+                        <li>
+                            <p>Comentario:</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- columna formato MP4 -->
+                <div class="container-formatos__formato formato-mp4">
+                    <h3>MP4</h3>
                     <img src="../assets/svg/kubo-svg.svg" alt="">
                     <ul>
                         <li>
@@ -206,12 +165,33 @@
                             <p>Peso: 86,3 KB</p>
                         </li>
                         <li>
-                            <p>Comentario: Es mas lenta que su respectiva conversión a jpg, pero no sufre perdidas al escalar</p>
+                            <p>Comentario: Es mas lenta que su respectiva conversión a jpg, pero no sufre perdidas al
+                                escalar</p>
                         </li>
 
                 </div>
-                <div class="container-formatos__formato formato-png">
-                    <h3>JPG</h3>
+
+                <!-- columna formato WebM -->
+                <div class="container-formatos__formato formato-webm">
+                    <h3>WebM</h3>
+                    <img src="../assets/images/kubo-jpg.jpg" alt="">
+                    <ul>
+                        <li>
+                            <p>Tiempo: 5 ms</p>
+                        </li>
+                        <li>
+                            <p>Peso: 10,5 KB</p>
+                        </li>
+                        <li>
+                            <p>Comentario: Más ligera y rápida</p>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- columna formato OGV -->
+                <div class="container-formatos__formato formato-ogv">
+                    <h3>OGV</h3>
                     <img src="../assets/images/kubo-jpg.jpg" alt="">
                     <ul>
                         <li>
