@@ -24,6 +24,10 @@
     //Seccion 1         Cartelera
     .section-main {
         position: relative;
+        #reproductor {
+            display: none;
+            width: 100%;
+        }
 
         .container-information {
             width: 100%;
@@ -80,7 +84,7 @@
         }
     }
 
-    //Seccion 1         Cartelera
+    //Seccion 2         Galeria
     h2 {
         background-color: map-get($map: $theme-back-colors, $key: "light");
         padding: map-get($map: $space-y, $key: "xxs");
