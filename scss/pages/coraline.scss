@@ -82,7 +82,6 @@
 
     //Seccion 2         Galeria
     h2 {
-        background-color: map-get($map: $colors, $key: "white");
         padding: map-get($map: $space-y, $key: "xxs");
         text-align: center;
     }

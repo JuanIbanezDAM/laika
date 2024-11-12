@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laika</title>
-    <!------------------- Biblioteca de iconos que permite a los desarrolladores web incorporar iconos vectoriales y fuentes en sus proyectos de manera sencilla. Font Awesome 4 -------------------------->
+    <!------------------- Herramienta online para importar iconos Font Awesome 4 -------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- Estilos genrales -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Estilos especificos de la pagaina -->
+    <link rel="stylesheet" href="../css/us.css">
 </head>
 
 <body>
@@ -16,8 +19,8 @@
     <header class="container-header">
         <!------------------- LOGO -------------------------->
         <div class="container-header__logo">
-            <a href="index.html">
-                <img class="container-header__logo-image" src="assets/images/logo-png.png" alt="Logo de la empresa">
+            <a href="../index.html">
+                <img class="container-header__logo-image" src="../assets/images/logo-png.png" alt="Logo de la empresa">
             </a>
         </div>
 
@@ -27,7 +30,7 @@
                 <li>
                     <a class="nav-link films-page" href="#">PELÍCULAS</a>
                     <ul class="nav-dropdown">
-                        <li><a class="dropdown-link coraline-page" href="pages/coraline.html">Coraline</a></li>
+                        <li><a class="dropdown-link coraline-page" href="coraline.html">Coraline</a></li>
                         <li><a class="dropdown-link paranorman-page" href="#">ParaNorman</a></li>
                         <li><a class="dropdown-link boxtrolls-page" href="#">BoxTrolls</a></li>
                         <li><a class="dropdown-link kubo-page" href="#">Kubo</a></li>
@@ -36,7 +39,7 @@
                 </li>
                 <li><a class="nav-link news-page" href="#">NOTICIAS</a></li>
                 <li><a class="nav-link catalog-page" href="#">CATÁLOGO</a></li>
-                <li><a class="nav-link us-page" href="pages/us.html">QUIENES SOMOS</a></li>
+                <li><a class="nav-link us-page" href="#">QUIENES SOMOS</a></li>
                 <li class="nav-search">
                     <a class="nav-icon" href="#" aria-label="Buscar">
                         <i class="fa fa-search"></i>
@@ -53,57 +56,57 @@
 
     <!------------------- MAIN -------------------------->
     <main class="container-main">
-        <!------------------- GUIA NAVEGACIÓN -------------------------->
-        <!--       <div class="container-nav-guide">
-            <h1>Estudio Laika</h1>
-        </div> -->
-
         <!------------------- SECTION 1     -   CARTELERA-------------------------->
         <section class="section-main">
-            <img src="assets/images/cartelera1-webp.webp" alt="Cartelera de la pelicula coraline">
+            <img src="../assets/images/cartelera2-webp.webp" alt="Cartelera de la pelicula coraline">
         </section>
 
-        <!------------------- SECTION 2     -   PELICULAS -------------------------->
+        <!------------------- SECTION 2 -------------------------->
+        <h1>Sobre nosotros</h1>
+        <section class="section-us">     
+            <div class="us-container us-container1">
+                <img src="../assets/images/fondo3-png.png" alt="">
+                <div class="us-container__info">
+                    <h2>LA HISTORIA DE LAIKA</h2>
+                    <p>En LAIKA, estamos comprometidos a contar historias originales y perdurables, y a llevar estos
+                        relatos
+                        a la mayor audiencia posible mientras lideramos en la industria cinematográfica. Innovamos y
+                        combinamos las últimas tecnologías emergentes con técnicas atemporales para crear clásicos de
+                        vanguardia.
+                    </p>
+                </div>
+            </div>
+            <div class="us-container us-container2">
+                <img src="../assets/images/fondo2-png.png" alt="">
+                <div class="us-container__info">
+                    <h2>LA VIDA EN LAIKA</h3>
+                    <p>En LAIKA, nos enfrentamos a lo difícil. El cine es un proceso inherentemente colaborativo, que
+                        consume mucho tiempo, es meticuloso y desafiante—justamente esas son las cualidades que hacen
+                        que nuestro trabajo sea tan único y trascendental. Nos esforzamos por reinventar la animación,
+                        destacando voces únicas y manteniéndonos fieles a las técnicas clásicas de stop-motion, al mismo
+                        tiempo que las enriquecemos con tecnología de vanguardia. Trabajamos arduamente para elevar el
+                        nivel y redefinir hasta dónde puede llevarnos esta forma de arte.
+                    </p>
+                </div>
+            </div>
 
-        <section class="section-films">
-            <h2>Nuestras películas</h2>
-            <div class="container-films">
-                <a href="pages/coraline.html">
-                    <img src="assets/svg/caroline-svg.svg" alt="svg de coraline">
-                </a>
-                <a href="#">
-                    <img src="assets/svg/paranorman-svg.svg" alt="svg de paranorman">
-                </a>
-                <a href="#">
-                    <img src="assets/svg/boxtrolls-svg.svg" alt="svg de boxtrolls">
-                </a>
-                <a href="#">
-                    <img src="assets/svg/kubo-svg.svg" alt="svg de kubo">
-                </a>
-                <a href="#">
-                    <img src="assets/svg/missinglink-svg.svg" alt="svg de missinglink">
-                </a>
+            <div class="us-container us-container3">
+                <img src="../assets/images/fondo3-png.png" alt="">
+                <div class="us-container__info">
+                    <h2>¿POR QUÉ PORTLAND?</h3>
+                    <p>Fundada en Portland, LAIKA promueve el espíritu de una ciudad conocida por abrazar el pensamiento
+                        libre, lo contracultural y lo aventurero. Estamos orgullosos de nuestro hogar, su historia y su
+                        cultura. LAIKA no sería la misma empresa creativa, definitoria de la industria, si hubiera
+                        nacido en otro lugar. Hemos adoptado esta cultura internamente, fomentando un ambiente que apoya
+                        y celebra la creatividad. Wildwood, nuestra próxima película, está ambientada en una versión
+                        ficticia del Forest Park de Portland, lo que nos da la oportunidad de compartir el espíritu de
+                        nuestra ciudad con más personas alrededor del mundo.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <!------------------- SECTION 3       -     ARTICULOS  ------------------------>
-        <section class="section-articles">
-            <article class="section-articles__article">
-                <a href="pages/ejercicio1.html"> <img src="assets/images/articulo1-webp.webp" alt="">
-                    <h2>Ejercicio 1</h2>
-                </a>
-            </article>
-            <article class="section-articles__article">
-                <a href="pages/ejercicio2.html"><img src="assets/images/articulo2-webp.webp" alt="">
-                    <h2>Ejercicio 2</h2>
-                </a>
-            </article>
-            <article class="section-articles__article">
-                <a href="#"><img src="assets/images/articulo3-webp.webp" alt="">
-                    <h2></h2>
-                </a>
-            </article>
-        </section>
+
 
     </main>
     <!------------------- FOOTER -------------------------->
@@ -143,7 +146,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
