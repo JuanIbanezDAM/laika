@@ -17,7 +17,7 @@
 @mixin border-mix (
     $px: map-get($map: $border-sizes, $key: 1),
     $type: solid,
-    $colr: map-get($map: $theme-font-colors, $key: "light")) 
+    $colr: map-get($map: $colors, $key: "white")) 
     {
     border: $px $type $colr;
 }

@@ -63,8 +63,7 @@
         </div> -->
         <!------------------- SECTION 1 -------------------------->
         <section class="section-main">
-            <video controls autoplay id="reproductor" src="../assets/videos/tiago-lemos-san-francisco-mp4.mp4"></video>
-            <img src="../assets/images/coraline-page-cartelera1-jpg.jpg" alt="Cartelera de la pelicula coraline">
+            <video controls autoplay id="reproductor" src="../assets/videos/trailer-coraline-mp4.mp4"></video>
             <div class="container-information">
                 <h1> CORALINE</h1>
                 <p>Coraline es una niña de 11 años que descubre un pasaje que lleva a una versión "mejorada" de su
@@ -78,15 +77,20 @@
 
                 <ul>
                     <li>
-                        <button id="trailer-button" class="trailer-button round-button" name="trailer-button"><i class="fa fa-play"
+                        <button id="btnPlay" class="play-button round-button"><i class="fa fa-play"
                                 aria-hidden="true"></i>
                         </button>
-                        <label class="trailer-label"><span>Tráiler</span></label>
+                        <button id="btnPause" class="pause-button round-button"><i class="fa fa-pause"
+                                aria-hidden="true"></i>
+                        </button>
+                        <button id="btnMute" class="mute-button round-button"><i class="fa  fa-volume-off"
+                                aria-hidden="true"></i>
+                        </button>
                     </li>
 
                     <li>
-                        <button id="trailer-button" class="add-button round-button" name="add-button"><i class="fa fa-cart-plus"
-                                aria-hidden="true"></i>
+                        <button id="trailer-button" class="add-button round-button" name="add-button"><i
+                                class="fa fa-cart-plus" aria-hidden="true"></i>
                         </button>
                         <label class="add-label"><span>Comprar</span> </label>
                     </li>
@@ -148,7 +152,7 @@
             </div>
         </div>
     </footer>
-<script src="../js/reproductorFullScream.js"></script>
+    <script src="../js/reproductor.js"></script>
 </body>
 
 </html>

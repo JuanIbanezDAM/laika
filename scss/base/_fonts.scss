@@ -14,7 +14,7 @@ h5,
 h6 {
   font-family: $font-familys;
   font-weight: map-get($map: $font-weights, $key: 4);
-  color: map-get($map: $theme-font-colors, $key: "light");
+  color: map-get($map: $colors, $key: "black");
 }
 
 //Textos
@@ -23,7 +23,7 @@ a,
 li {
   font-family: $font-familys;
   font-weight: map-get($map: $font-weights, $key: 3);
-  color: map-get($map: $theme-font-colors, $key: "light");
+  color: map-get($map: $colors, $key: "black");
 }
 
 //Botones y formularios

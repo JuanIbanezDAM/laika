@@ -33,7 +33,6 @@
                     @include align-mix();
                     padding: map-get($map: $space-x, $key: "m");
                     font-size: map-get($map: $font-sizes, $key: 3);
-                    background: map-get($map: $theme-back-colors, $key: "ligth");
                     text-wrap: nowrap;
 
                     &:hover {
@@ -64,7 +63,7 @@
     position: absolute;
     padding: map-get($map: $space-x, $key: "m");
     @include align-mix(initial);
-    background-color: map-get($map: $theme-back-colors, $key: "light");
+    background-color: map-get($map: $colors, $key: "black");
     z-index: 999;
 
     li{
@@ -74,6 +73,7 @@
             display: block;
             padding: map-get($map: $space, $key: "xxs");
             @include align-mix(initial);
+            color: map-get($map: $colors, $key: "white");
        
             &:hover {
                 color: map-get($map: $colors, $key: "yellow");

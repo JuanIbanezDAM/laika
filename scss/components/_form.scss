@@ -8,12 +8,12 @@
     &__column {
         display: grid;
         input {
-            background-color: map-get($map: $theme-back-colors, $key: "light");
+            color: map-get($map: $colors, $key: "white");
+            background-color: map-get($map: $colors, $key: "black");
             @include border-mix(map-get($map: $border-sizes, $key: 2));
 
 
             &:focus {
-                color: map-get($map: $theme-back-colors, $key: "light");
                 background-color: map-get($map: $colors, $key: "blue-dark");
             }
         }

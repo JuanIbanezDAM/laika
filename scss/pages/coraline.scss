@@ -16,8 +16,8 @@
 .container-main {
 
     .container-nav-guide {
-        background-color: map-get($map: $theme-back-colors, $key: "light");
-        color: map-get($map: $theme-font-colors, $key: "light");
+        background-color: map-get($map: $colors, $key: "black");
+        color: map-get($map: $colors, $key: "white");
         padding: map-get($map: $space-x, $key: "s");
     }
 
@@ -25,7 +25,6 @@
     .section-main {
         position: relative;
         #reproductor {
-            display: none;
             width: 100%;
         }
 
@@ -65,11 +64,8 @@
                         transition: opacity 0.3s ease;
                     }
 
-                    .trailer-button {
-                        &:hover+.trailer-label {
-                            opacity: 1;
-                            visibility: visible;
-                        }
+                    .pause-button{
+                        display: none;
                     }
 
                     .add-button {
@@ -86,27 +82,27 @@
 
     //Seccion 2         Galeria
     h2 {
-        background-color: map-get($map: $theme-back-colors, $key: "light");
+        background-color: map-get($map: $colors, $key: "white");
         padding: map-get($map: $space-y, $key: "xxs");
         text-align: center;
     }
 
     .section-galery {
-        height: 700px;
-        overflow-y: scroll;
         text-align: center;
         background-image: url("../assets/images/coraline-page-fondo2-webp.webp");
+        background-position: center;
+        background-attachment: fixed;
 
         &__galery {
             width: 1000px;
             margin: 0 auto;
+            columns: 300px;
 
             img {
                 width: 100%;
                 padding: map-get($map: $space-y, $key: "xs");
             }
-
-            columns: 300px;
+          
         }
     }
 
