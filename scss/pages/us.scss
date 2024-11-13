@@ -22,6 +22,7 @@ h1 {
 
         img {
             object-fit: cover;
+            top: -5vh;
         }
 
         &__info {
@@ -36,9 +37,6 @@ h1 {
             text-align: center;
             justify-content: space-between;
 
-            h1 {
-
-            }
             p {
                 text-align: justify;
                 line-height: 1.5; /* Interlineado del 150% del tamaño de la fuente */
