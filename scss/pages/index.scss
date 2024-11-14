@@ -1,4 +1,6 @@
 // Index
+@import '../utilities/variables';
+@import '../utilities/mixins';
 
 //Main
 .container-main {
@@ -18,11 +20,6 @@
     //Seccion 2     Peliculas
     .section-films {
         text-align: center;
-
-        h2 {
-            font-size: map-get($map: $font-sizes, $key: 4);
-            padding: map-get($map: $space-y, $key: "xxs");
-        }
 
         .container-films {
             width: 80%;
