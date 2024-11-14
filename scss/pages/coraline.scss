@@ -83,7 +83,7 @@
     }
 
     //Seccion 2         Reparto
-    .section-us {
+    .section-reparto {
 
         h2 {
             text-align: center
@@ -91,13 +91,7 @@
         @include flex-mix(); //  display: flex       Defecto: row - nowarp
         justify-content: space-around;
 
-        .us-container1 {}
-
-        .us-container2 {}
-
-        .us-container3 {}
-
-        .us-container {
+        .reparto-container {
             width: 30%;
             height: 30%;
             @include flex-mix(column); //  display: flex       Defecto: column - nowarp

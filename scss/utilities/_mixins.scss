@@ -4,7 +4,6 @@
 @mixin flex-mix($direction: row, $wrap: nowrap) {
     display: flex;
     flex-flow: $direction $wrap;
-
 }
 
 //  text-align, align-content       Defecto: center - center
