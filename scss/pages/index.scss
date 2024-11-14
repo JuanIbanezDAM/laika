@@ -4,6 +4,9 @@
 
 //Main
 .container-main {
+    h1 {
+        text-align: center;
+    }
 
     //Seccion 1     Cartelera
     .section-main {
@@ -60,7 +63,7 @@
                     }
                 }
 
-                h2 {
+                h3 {
                     position: absolute;
                     top: 5px;
                     left: 5px;
