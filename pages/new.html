@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="../css/main.css">
     <!-- Estilos especificos de la pagaina -->
     <link rel="stylesheet" href="../css/new.css">
+    <!-- Link de BootsTrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -55,14 +58,37 @@
 
     <!------------------- MAIN -------------------------->
     <main class="container-main">
-        <!------------------- SECTION 1     CARTELERA-------------------------->
-        <section class="section-main">
-            <img src="../assets/images/cartelera3-webp.webp" alt="Cartelera de la pelicula coraline">
+
+        <!------------------- SECTION 1     ARTICULOS CON BOOTSTRAP------------------------------>
+        <!-- container-fluid abarca todo el ancho de la ventana 100%. -->
+        <!-- bg-container para aplicar la imagen de fondo al contenedor. -->
+        <section class="container-fluid bg-container mi-container-articulo">
+            <!-- container-md ancho completo hasta que el tamaño de la pantalla alcanza el punto de interrupción "md" (768 píxeles). -->
+            <article class="container-md">
+                <!-- fs-1 es la propiedad font-size siendo el 1 el más grande -->
+                <!-- pt-5 es la propiedad padding-top -->
+                <!-- text-warning color amarillo para textos de Aviso -->
+                <h1 class="fs-1 pt-5 text-warning">FRAME x FRAME AT BFI SOUTHBANK</h1>
+                <!-- d-flex es la propiedad display flex que por defecto colocara los elementos en linea-->
+                <!-- d-flex es la propiedad display gap para el espaciado entre elementos -->
+                <ul class="d-flex gap-2">
+                    <li class="fs-3 text-secondary">Aug 12, 2024</li>
+                    <li class="fs-3 text-secondary ">Oct 1, 2024</li>
+                    <li class="fs-3 text-secondary"> | </li>
+                    <li class="fs-3 text-secondary">London, UK</li>
+                </ul>
+                <p class="fs-5 yellow text-light ">In partnership with the British Film Institute (BFI), LAIKA is proud
+                    to
+                    headline the upcoming film season, Stop Motion: Celebrating Hand-Crafted Animation on the Big
+                    Screen, this summer at London’s BFI Southbank. Extensive cinematic screenings—including all five
+                    LAIKA films—will take place alongside Frame x Frame, an exhibition showcasing LAIKA’s decades of
+                    artistry up close and personal. Frame x Frame visitors will get exclusive access to see an array
+                    of LAIKA puppets, props, dioramas, and movie artifacts, learn behind-the-scenes stop-motion
+                    secrets, and walk through an iconic Coraline set recreated at a human scale.</p>
+            </article>
         </section>
-
-        <!------------------- SECTION 2     FILMS------------------------------>
-
     </main>
+
     <!------------------- FOOTER -------------------------->
     <footer>
         <div class="container-footer">
@@ -98,8 +124,12 @@
                     </div>
                 </form>
             </div>
-        </div>
+
     </footer>
+    <!-- Link de BootsTrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
