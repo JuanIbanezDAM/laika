@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Laika</title>
+    <!------------------- Herramienta online para importar iconos Font Awesome 4 -------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Estilos genrales -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Estilos especificos de la pagaina -->
+    <link rel="stylesheet" href="../css/films.css">
 </head>
+
 <body>
-    
+
+    <!------------------- HEADER -------------------------->
+    <header class="container-header">
+        <!------------------- LOGO -------------------------->
+        <div class="container-header__logo">
+            <a href="../index.html">
+                <img class="container-header__logo-image" src="../assets/images/logo-png.png" alt="Logo de la empresa">
+            </a>
+        </div>
+
+        <!------------------- NAVBAR -------------------------->
+        <nav class="container-header__nav">
+            <ul class="nav-list">
+                <li>
+                    <a class="nav-link films-page" href="films.html">PELÍCULAS</a>
+                    <ul class="nav-dropdown">
+                        <li><a class="dropdown-link coraline-page" href="coraline.html">Coraline</a></li>
+                        <li><a class="dropdown-link paranorman-page" href="coraline.html">ParaNorman</a></li>
+                        <li><a class="dropdown-link boxtrolls-page" href="coraline.html">BoxTrolls</a></li>
+                        <li><a class="dropdown-link kubo-page" href="coraline.html">Kubo</a></li>
+                        <li><a class="dropdown-link missinglink-page" href="coraline.html">Missing Link</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link news-page" href="news.html">NOTICIAS</a></li>
+                <li><a class="nav-link us-page" href="us.html">QUIENES SOMOS</a></li>
+                <li class="nav-search">
+                    <a class="nav-icon" href="#" aria-label="Buscar">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-icon" href="#" aria-label="Carrito de compras">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!------------------- MAIN -------------------------->
+    <main class="container-main">
+        <!------------------- SECTION 1     CARTELERA-------------------------->
+        <section class="section-main">
+            <img src="../assets/images/cartelera4-webp.webp" alt="Cartelera de la pelicula coraline">
+        </section>
+
+        <!------------------- SECTION 2     PELICULAS ------------------------->
+
+        <section class="section-films">
+            <h2>Nuestras películas</h2>
+            <div class="container-films">
+                <a href="pages/coraline.html">
+                    <img src="../assets/svg/caroline-svg.svg" alt="svg de coraline">
+                </a>
+                <a href="pages/coraline.html">
+                    <img src="../assets/svg/paranorman-svg.svg" alt="svg de paranorman">
+                </a>
+                <a href="pages/coraline.html">
+                    <img src="../assets/svg/boxtrolls-svg.svg" alt="svg de boxtrolls">
+                </a>
+                <a href="pages/coraline.html">
+                    <img src="../assets/svg/kubo-svg.svg" alt="svg de kubo">
+                </a>
+                <a href="pages/coraline.html">
+                    <img src="../assets/svg/missinglink-svg.svg" alt="svg de missinglink">
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <!------------------- FOOTER -------------------------->
+    <footer>
+        <div class="container-footer">
+            <div class="section-footer">
+                <h3>Tienda</h3>
+                <ul class="section-footer__list-item">
+                    <li><a href="#">Ropa</a></li>
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="#">Moñecos</a></li>
+                    <li><a href="#">Ropa</a></li>
+                </ul>
+            </div>
+            <div class="section-footer">
+                <h3>Información</h3>
+                <ul class="section-footer__list-item">
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="us.html">Sobre Nosotros</a></li>
+                    <li><a> <span> &#169;</span> Copyrigth 2024</a></li>
+                </ul>
+            </div>
+            <!------------------- FORM -------------------------->
+            <div class="section-footer">
+                <h3>Newsletter</h3>
+                <form action="action_page.php" class="container-form">
+                    <div class="container-form__column">
+                        <input type="text" placeholder="Nombre" name="name" required>
+                        <input type="text" placeholder="Email" name="mail" required>
+                    </div>
+
+                    <div class="container-form__column">
+                        <input type="submit" value="Enviar" class="form-submit button-pre">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
