@@ -1,0 +1,27 @@
+// Footer
+
+footer {
+    background-image: url("../assets/images/footer-jpg.jpg");
+}
+
+.container-footer {
+    width: 60%;
+    @include flex-mix();
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: map-get($map: $space, $key: xxl);
+
+    .section-footer {
+        flex: 1;
+        max-width: fit-content;
+
+        h3 {
+            color: map-get($map: $colors, $key: "yellow-dark");
+            margin: map-get($map: $space-y, $key: "xxs");
+        }
+
+        a {
+            color: map-get($map: $colors, $key: "white");
+        }
+    }
+}

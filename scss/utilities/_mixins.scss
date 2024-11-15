@@ -1,0 +1,22 @@
+//Mixins
+
+//  display: flex       Defecto: row - nowarp
+@mixin flex-mix($direction: row, $wrap: nowrap) {
+    display: flex;
+    flex-flow: $direction $wrap;
+}
+
+//  text-align, align-content       Defecto: center - center
+@mixin align-mix($direction: center, $content: center) {
+    text-align: $direction;
+    align-content: $content;
+}
+
+//  border       Defecto: 1px - solid - black
+@mixin border-mix (
+    $px: map-get($map: $border-sizes, $key: 1),
+    $type: solid,
+    $colr: map-get($map: $colors, $key: "white")) 
+    {
+    border: $px $type $colr;
+}

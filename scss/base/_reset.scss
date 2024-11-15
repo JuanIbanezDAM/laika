@@ -1,0 +1,26 @@
+// Resets
+
+//Formateo de los estilos basicos
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    max-width: 1920px; //Ancho por defecto para monitores superiores a 1920p
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

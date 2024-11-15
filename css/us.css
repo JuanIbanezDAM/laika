@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* !!!
+La mayor parte de elementos del proyecto usan estas variables para sus estilos
+cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principales, tamaños de de los títulos, márgenes por defecto de elementos html.
+ !!! */
+/*------------------- Colores --------------------------*/
+/*------------------- Fuentes --------------------------*/
+/*------------------- Margenes o Paddings --------------------------*/
+.container-main h1 {
+  text-align: center;
+}
+.container-main .section-us {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.container-main .section-us .us-container {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+}
+.container-main .section-us .us-container__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: -5vh;
+}
+.container-main .section-us .us-container__info {
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  justify-content: space-between;
+}
+.container-main .section-us .us-container__info p {
+  text-align: justify;
+  line-height: 1.5;
+  /* Interlineado del 150% del tamaño de la fuente */
+  padding: 0 3em;
+}

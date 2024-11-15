@@ -1,0 +1,20 @@
+// Main
+
+//Utilidades
+@import './utilities/variables';
+@import './utilities/mixins';
+
+//Base
+@import './base/reset';
+@import './base/fonts';
+
+//Componentes
+@import './components/buttons';
+@import './components/form';
+
+//Layouts
+@import './layout/header';
+@import './layout/footer';
+
+//Pages
+@import './pages/index';
