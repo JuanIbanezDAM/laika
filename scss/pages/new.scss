@@ -3,6 +3,7 @@
 
 // Reset de los estilos de BootsTrap
 body {
+    /* fuerza el estilo, incluso si hay otras reglas con mayor especificidad */
     margin: 0 auto !important;
 }
 

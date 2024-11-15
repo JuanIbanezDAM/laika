@@ -1,1 +1,129 @@
-.films-page{color:#d8c615}.coraline-page{color:#d8c615}.container-main .container-nav-guide{background-color:#1d1e20;color:#f1f1f1;padding:0 .9em}.container-main .section-main{position:relative}.container-main .section-main #reproductor{width:100%;-o-object-fit:cover;object-fit:cover}.container-main .section-main .container-information{width:100%;position:absolute;bottom:0;padding:1.9em;background-color:rgba(0,0,0,.6)}.container-main .section-main .container-information h1{color:#d8c615;padding:.5em 0}.container-main .section-main .container-information p,.container-main .section-main .container-information ul,.container-main .section-main .container-information span{color:#f1f1f1;padding:.5em 0}.container-main .section-main .container-information ul{display:flex;flex-flow:row nowrap;gap:5em}.container-main .section-main .container-information ul li .trailer-label{opacity:0;visibility:hidden;transition:opacity .3s ease}.container-main .section-main .container-information ul li .add-label{opacity:0;visibility:hidden;transition:opacity .3s ease}.container-main .section-main .container-information ul li .pause-button{display:none}.container-main .section-main .container-information ul li .add-button:hover+.add-label{opacity:1;visibility:visible}.container-main .section-reparto{display:flex;flex-flow:row nowrap;justify-content:space-around}.container-main .section-reparto h2{text-align:center}.container-main .section-reparto .reparto-container{width:30%;height:30%;display:flex;flex-flow:column nowrap;position:relative;overflow:hidden}.container-main .section-reparto .reparto-container img{-o-object-fit:cover;object-fit:cover}.container-main .section-reparto .reparto-container__info{width:100%;position:absolute;top:20%;left:0;display:flex;flex-flow:column nowrap;text-align:center;justify-content:space-between}.container-main .section-reparto .reparto-container__info img{position:absolute;top:-5vh}.container-main .section-reparto .reparto-container__info p{text-align:justify;line-height:1.5;color:#f1f1f1;text-shadow:0 0 0 1px #1d1e20;padding:0 3em;z-index:99}.container-main h2{padding:.5em 0;text-align:center}.container-main .section-galery{text-align:center;background-image:url("../assets/images/coraline-page-fondo2-webp.webp");background-position:center;background-size:cover}.container-main .section-galery__galery{width:1000px;margin:0 auto;-moz-columns:300px;columns:300px}.container-main .section-galery__galery img{width:100%;padding:.7em 0}
+@charset "UTF-8";
+/* !!!
+La mayor parte de elementos del proyecto usan estas variables para sus estilos
+cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principales, tamaños de de los títulos, márgenes por defecto de elementos html.
+ !!! */
+/*------------------- Colores --------------------------*/
+/*------------------- Fuentes --------------------------*/
+/*------------------- Margenes o Paddings --------------------------*/
+.films-page {
+  color: #d8c615;
+}
+
+.coraline-page {
+  color: #d8c615;
+}
+
+.container-main .container-nav-guide {
+  background-color: #1d1e20;
+  color: #f1f1f1;
+  padding: 0 0.9em;
+}
+.container-main .section-main {
+  position: relative;
+}
+.container-main .section-main #reproductor {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-main .section-main .container-information {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 1.9em;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.container-main .section-main .container-information h1 {
+  color: #d8c615;
+  padding: 0.5em 0;
+}
+.container-main .section-main .container-information p,
+.container-main .section-main .container-information ul,
+.container-main .section-main .container-information span {
+  color: #f1f1f1;
+  padding: 0.5em 0;
+}
+.container-main .section-main .container-information ul {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5em;
+}
+.container-main .section-main .container-information ul li .purchase-label {
+  opacity: 0;
+  visibility: hidden;
+  /* transition-property: opacity; */
+  /* transition-duration: 0.3s;  */
+  /* transition-timing-function: ease; */
+  transition: opacity 0.3s ease;
+}
+.container-main .section-main .container-information ul li .pause-button {
+  display: none;
+}
+.container-main .section-main .container-information ul li .purchase-button:hover + .purchase-label {
+  opacity: 1;
+  visibility: visible;
+}
+.container-main .section-reparto {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.container-main .section-reparto h2 {
+  text-align: center;
+}
+.container-main .section-reparto .reparto-container {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  overflow: hidden;
+}
+.container-main .section-reparto .reparto-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-main .section-reparto .reparto-container__info {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  justify-content: space-between;
+}
+.container-main .section-reparto .reparto-container__info img {
+  position: absolute;
+  top: -5vh;
+}
+.container-main .section-reparto .reparto-container__info p {
+  text-align: justify;
+  line-height: 1.5;
+  /* Interlineado del 150% del tamaño de la fuente */
+  color: #f1f1f1;
+  text-shadow: 0 0 0 1px #1d1e20;
+  padding: 0 3em;
+  z-index: 99;
+}
+.container-main h2 {
+  padding: 0.5em 0;
+  text-align: center;
+}
+.container-main .section-galery {
+  text-align: center;
+  background-image: url("../assets/images/coraline-page-fondo2-webp.webp");
+  background-position: center;
+  background-size: cover;
+}
+.container-main .section-galery__galery {
+  width: 1000px;
+  margin: 0 auto;
+  -moz-columns: 300px;
+       columns: 300px;
+}
+.container-main .section-galery__galery img {
+  width: 100%;
+  padding: 0.7em 0;
+}

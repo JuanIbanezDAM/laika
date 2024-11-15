@@ -1,1 +1,268 @@
-@import"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{width:100%;max-width:1920px;margin:0 auto;padding:0}a{text-decoration:none}li{list-style:none}h1,h2,h3,h4,h5,h6{font-family:"Roboto",sans-serif;font-weight:700;color:#1d1e20}p,a,li{font-family:"Roboto",sans-serif;font-weight:500;color:#1d1e20}button,input{font-family:"Roboto",sans-serif;font-size:1.6em;font-weight:700}a{font-size:1.6em}h1{font-size:2.3em}h2{font-size:1.6em}h3{font-size:1.6em}button{background-color:#1d1e20;border:2px solid #f1f1f1;padding:.5em 2em}.round-button{width:60px;height:60px;padding:0;border-radius:50%;background-color:#f1f1f1;border:none}.container-form{display:flex;flex-flow:column nowrap;text-align:center;align-content:center;justify-content:space-evenly}.container-form__column{display:grid}.container-form__column input{color:#f1f1f1;background-color:#1d1e20;border:2px solid #f1f1f1}.container-form__column input:focus{background-color:#0d2c49}.container-header{display:flex;flex-flow:row nowrap;padding:.5em}.container-header__logo{width:20%;padding:0 .5em}.container-header__logo a img{display:block;height:50px}.container-header__nav{width:80%;text-align:end;align-content:end;padding:0 .5em}.container-header__nav .nav-list li{display:inline-block;position:relative}.container-header__nav .nav-list li .nav-link,.container-header__nav .nav-list li .nav-icon{display:block;text-align:center;align-content:center;padding:0 1.2em;font-size:1.6em;text-wrap:nowrap}.container-header__nav .nav-list li .nav-link:hover,.container-header__nav .nav-list li .nav-icon:hover{color:#d8c615}.container-header__nav .nav-list li:hover .nav-dropdown{display:grid}.nav-dropdown{display:none;width:100%;position:absolute;padding:0 1.2em;text-align:initial;align-content:center;background-color:#1d1e20;z-index:999}.nav-dropdown li{display:block}.nav-dropdown li .dropdown-link{font-size:1.6em;display:block;padding:.5em;text-align:initial;align-content:center;color:#f1f1f1}.nav-dropdown li .dropdown-link:hover{color:#d8c615}footer{background-image:url("../assets/images/footer-jpg.jpg")}.container-footer{width:60%;display:flex;flex-flow:row nowrap;justify-content:space-between;margin:0 auto;padding:2.3em}.container-footer .section-footer{flex:1;max-width:-moz-fit-content;max-width:fit-content}.container-footer .section-footer h3{color:#c7a40e;margin:.5em 0}.container-footer .section-footer a{color:#f1f1f1}.container-main h1{text-align:center}.container-main .section-main{width:100%;height:800px;overflow:hidden}.container-main .section-main img{width:1920px;height:auto}.container-main .section-films{text-align:center}.container-main .section-films .container-films{width:80%;margin:0 auto;display:flex;flex-flow:row nowrap;justify-content:center;padding:1.5em;overflow:hidden}.container-main .section-films .container-films a{flex:1}.container-main .section-films .container-films a:hover img{filter:drop-shadow(0 0 10px #0d2c49)}.container-main .section-articles{display:flex;flex-flow:row nowrap;max-width:100%}.container-main .section-articles__article{flex:1}.container-main .section-articles__article a{display:flex;position:relative;filter:brightness(100%)}.container-main .section-articles__article a img{width:100%}.container-main .section-articles__article a img:hover{filter:brightness(50%)}.container-main .section-articles__article a h3{position:absolute;top:5px;left:5px;padding:0 .5em;background-color:rgba(0,0,0,.5);color:#f1f1f1;border-color:#fff}
+@charset "UTF-8";
+/* !!!
+La mayor parte de elementos del proyecto usan estas variables para sus estilos
+cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principales, tamaños de de los títulos, márgenes por defecto de elementos html.
+ !!! */
+/*------------------- Colores --------------------------*/
+/*------------------- Fuentes --------------------------*/
+/*------------------- Margenes o Paddings --------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #1d1e20;
+}
+
+p,
+a,
+li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #1d1e20;
+}
+
+button,
+input {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+a {
+  font-size: 1.6em;
+}
+
+h1 {
+  font-size: 2.3em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+button {
+  background-color: #1d1e20;
+  border: 2px solid #f1f1f1;
+  padding: 0.5em 2em;
+}
+
+.round-button {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  border: none;
+}
+
+.container-form {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.container-form__column {
+  display: grid;
+}
+.container-form__column input {
+  color: #f1f1f1;
+  background-color: #1d1e20;
+  border: 2px solid #f1f1f1;
+}
+.container-form__column input:focus {
+  background-color: #0d2c49;
+}
+
+.container-header {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0.5em;
+}
+.container-header__logo {
+  width: 20%;
+  padding: 0 0.5em;
+}
+.container-header__logo a img {
+  display: block;
+  height: 50px;
+}
+.container-header__nav {
+  width: 80%;
+  text-align: end;
+  align-content: end;
+  padding: 0 0.5em;
+}
+.container-header__nav .nav-list {
+  /*   .nav-search{
+        display: flex;
+    } */
+}
+.container-header__nav .nav-list li {
+  display: inline-block;
+  position: relative;
+}
+.container-header__nav .nav-list li .nav-link, .container-header__nav .nav-list li .nav-icon {
+  display: block;
+  text-align: center;
+  align-content: center;
+  padding: 0 1.2em;
+  font-size: 1.6em;
+  text-wrap: nowrap;
+}
+.container-header__nav .nav-list li .nav-link:hover, .container-header__nav .nav-list li .nav-icon:hover {
+  color: #d8c615;
+}
+.container-header__nav .nav-list li:hover .nav-dropdown {
+  display: grid;
+}
+
+.nav-dropdown {
+  display: none;
+  width: 100%;
+  position: absolute;
+  padding: 0 1.2em;
+  text-align: initial;
+  align-content: center;
+  background-color: #1d1e20;
+  z-index: 999;
+}
+.nav-dropdown li {
+  display: block;
+}
+.nav-dropdown li .dropdown-link {
+  font-size: 1.6em;
+  display: block;
+  padding: 0.5em;
+  text-align: initial;
+  align-content: center;
+  color: #f1f1f1;
+}
+.nav-dropdown li .dropdown-link:hover {
+  color: #d8c615;
+}
+
+footer {
+  background-image: url("../assets/images/footer-jpg.jpg");
+}
+
+.container-footer {
+  width: 60%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2.3em;
+}
+.container-footer .section-footer {
+  flex: 1;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.container-footer .section-footer h3 {
+  color: #c7a40e;
+  margin: 0.5em 0;
+}
+.container-footer .section-footer a {
+  color: #f1f1f1;
+}
+
+/* !!!
+La mayor parte de elementos del proyecto usan estas variables para sus estilos
+cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principales, tamaños de de los títulos, márgenes por defecto de elementos html.
+ !!! */
+/*------------------- Colores --------------------------*/
+/*------------------- Fuentes --------------------------*/
+/*------------------- Margenes o Paddings --------------------------*/
+.container-main h1 {
+  text-align: center;
+}
+.container-main .section-main {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+.container-main .section-main img {
+  width: 1920px;
+  height: auto;
+}
+.container-main .section-films {
+  text-align: center;
+}
+.container-main .section-films .container-films {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 1.5em;
+  overflow: hidden;
+}
+.container-main .section-films .container-films a {
+  flex: 1;
+}
+.container-main .section-films .container-films a:hover img {
+  filter: drop-shadow(0 0 10px #0d2c49);
+}
+.container-main .section-articles {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 100%;
+}
+.container-main .section-articles__article {
+  flex: 1;
+}
+.container-main .section-articles__article a {
+  display: flex;
+  position: relative;
+  filter: brightness(100%);
+}
+.container-main .section-articles__article a img {
+  width: 100%;
+}
+.container-main .section-articles__article a img:hover {
+  filter: brightness(50%);
+}
+.container-main .section-articles__article a h3 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 0 0.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  border-color: #ffffff;
+}

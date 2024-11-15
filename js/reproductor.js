@@ -1,4 +1,4 @@
-/* var contendorReproductor = document.getElementById('section-main'); */
+//Reproductor trailer
 
 //Variables
 

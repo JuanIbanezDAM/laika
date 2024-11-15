@@ -1,1 +1,56 @@
-.container-main h1{text-align:center}.container-main .container-news{width:100%;display:grid;grid-template-columns:auto auto auto;grid-template-rows:auto auto;justify-content:center;gap:1.2em;padding:1.2em}.container-main .container-news .news-card{max-width:576px;max-height:576px;display:flex;flex-flow:column nowrap;padding:1.9em;border-radius:10px;overflow:hidden;background-image:url("../assets/images/fondo-noticias-png.png");background-position:center;background-size:cover}.container-main .container-news .news-card__img{width:auto;height:auto;-o-object-fit:cover;object-fit:cover;border-radius:10px}.container-main .container-news .news-card__container-info{width:100%}.container-main .container-news .news-card__container-info h3,.container-main .container-news .news-card__container-info p{color:#f1f1f1}.container-main .container-news .news-card1{grid-row-start:1;grid-row-end:3;transition-duration:.8s;transition-timing-function:ease-in}.container-main .container-news .news-card1:hover{max-height:100%;height:100%}
+@charset "UTF-8";
+/* !!!
+La mayor parte de elementos del proyecto usan estas variables para sus estilos
+cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principales, tamaños de de los títulos, márgenes por defecto de elementos html.
+ !!! */
+/*------------------- Colores --------------------------*/
+/*------------------- Fuentes --------------------------*/
+/*------------------- Margenes o Paddings --------------------------*/
+.container-main h1 {
+  text-align: center;
+}
+.container-main .container-news {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  gap: 1.2em;
+  padding: 1.2em;
+}
+.container-main .container-news .news-card {
+  max-width: 576px;
+  max-height: 576px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1.9em;
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: url("../assets/images/fondo-noticias-png.png");
+  background-position: center;
+  background-size: cover;
+}
+.container-main .container-news .news-card__img {
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.container-main .container-news .news-card__container-info {
+  width: 100%;
+}
+.container-main .container-news .news-card__container-info h3,
+.container-main .container-news .news-card__container-info p {
+  color: #f1f1f1;
+}
+.container-main .container-news .news-card1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in;
+}
+.container-main .container-news .news-card1:hover {
+  max-height: 100%;
+  height: 100%;
+}

@@ -1,1 +1,17 @@
-body{margin:0 auto !important}a{text-decoration:none !important}.mi-container-articulo{background-image:url("../assets/images/fondo-articulo-jpg.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;width:100%;height:1080px}
+body {
+  /* fuerza el estilo, incluso si hay otras reglas con mayor especificidad */
+  margin: 0 auto !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.mi-container-articulo {
+  background-image: url("../assets/images/fondo-articulo-jpg.jpg");
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  width: 100%;
+  height: 1080px;
+}
