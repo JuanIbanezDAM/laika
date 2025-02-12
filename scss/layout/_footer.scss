@@ -2,6 +2,7 @@
 
 footer {
     background-image: url("../assets/images/footer-jpg.jpg");
+    background-color: map-get($map: $colors, $key: "black");
 }
 
 .container-footer {
@@ -21,6 +22,9 @@ footer {
         }
 
         a {
+            color: map-get($map: $colors, $key: "white");
+        }
+        label {
             color: map-get($map: $colors, $key: "white");
         }
     }

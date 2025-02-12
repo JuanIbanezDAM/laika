@@ -108,7 +108,7 @@
                     <li><a href="#">Política de privacidad</a></li>
                     <li><a href="#">Política de Cookies</a></li>
                     <li><a href="us.html">Sobre Nosotros</a></li>
-                    <li><a> <span> &#169;</span> Copyrigth 2024</a></li>
+                    <li><a href="#"> <span> &#169;</span> Copyrigth 2024</a></li>
                 </ul>
             </div>
 
@@ -117,8 +117,10 @@
                 <h3>Newsletter</h3>
                 <form action="action_page.php" class="container-form">
                     <div class="container-form__column">
-                        <input type="text" placeholder="Nombre" name="name" required>
-                        <input type="text" placeholder="Email" name="mail" required>
+                        <label for="name">Nombre</label>
+                        <input type="text" placeholder="Nombre" name="name" id="name" required>
+                        <label for="mail">Email</label>
+                        <input type="text" placeholder="Email" name="mail" id="mail"required>
                     </div>
                     <div class="container-form__column">
                         <input type="submit" value="Enviar" class="form-submit button-pre">

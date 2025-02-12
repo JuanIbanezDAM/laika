@@ -45,7 +45,8 @@ h6 {
 
 p,
 a,
-li {
+li,
+label {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #1d1e20;
@@ -178,6 +179,7 @@ button {
 
 footer {
   background-image: url("../assets/images/footer-jpg.jpg");
+  background-color: #1d1e20;
 }
 
 .container-footer {
@@ -198,6 +200,9 @@ footer {
   margin: 0.5em 0;
 }
 .container-footer .section-footer a {
+  color: #f1f1f1;
+}
+.container-footer .section-footer label {
   color: #f1f1f1;
 }
 
