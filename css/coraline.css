@@ -34,7 +34,8 @@ cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principal
   padding: 1.9em;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.container-main .section-main .container-information h1 {
+.container-main .section-main .container-information h1, .container-main .section-main .container-information h2 {
+  text-align: start;
   color: #d8c615;
   padding: 0.5em 0;
 }
@@ -107,7 +108,7 @@ cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principal
   text-shadow: 0 0 0 1px #1d1e20;
   padding: 0 3em;
   z-index: 99;
-  background-color: #1d1e20;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .container-main h2 {
   padding: 0.5em 0;
@@ -120,7 +121,7 @@ cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principal
   background-size: cover;
 }
 .container-main .section-galery__galery {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   -moz-columns: 300px;
        columns: 300px;

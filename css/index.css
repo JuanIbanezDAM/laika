@@ -6,16 +6,22 @@ cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principal
 /*------------------- Colores --------------------------*/
 /*------------------- Fuentes --------------------------*/
 /*------------------- Margenes o Paddings --------------------------*/
+.container-main {
+  width: 100%;
+  max-width: 1920px;
+}
 .container-main h1 {
   text-align: center;
 }
 .container-main .section-main {
-  width: 100%;
-  height: 800px;
   overflow: hidden;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container-main .section-main img {
-  width: 1920px;
+  width: 100%;
   height: auto;
 }
 .container-main .section-films {
@@ -25,13 +31,17 @@ cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principal
   width: 80%;
   margin: 0 auto;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   padding: 1.5em;
   overflow: hidden;
 }
 .container-main .section-films .container-films a {
   flex: 1;
+}
+.container-main .section-films .container-films a img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container-main .section-films .container-films a:hover img {
   filter: drop-shadow(0 0 10px #0d2c49);

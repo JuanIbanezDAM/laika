@@ -3,6 +3,8 @@
 //Contenedor general     logo 20% - nav 80%
 
 .container-header {
+    width: 100%;
+    max-width: 1920px;
     @include flex-mix(); //  display: flex       Defecto: row - nowarp
     padding: map-get($map: $space, $key: "xxs");
 
