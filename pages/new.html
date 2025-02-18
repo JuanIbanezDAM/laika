@@ -32,13 +32,13 @@
         <nav class="container-header__nav">
             <ul class="nav-list">
                 <li>
-                    <a class="nav-link films-page" href="films.html">PELÍCULAS</a>
-                    <ul class="nav-dropdown">
+                    <a class="nav-link films-page" id="enlace-dropdown" href="films.html">PELÍCULAS</a>
+                    <ul class="nav-dropdown" id="lista-dropdown">
                         <li><a class="dropdown-link coraline-page" href="coraline.html">Coraline</a></li>
                         <li><a class="dropdown-link paranorman-page" href="coraline.html">ParaNorman</a></li>
                         <li><a class="dropdown-link boxtrolls-page" href="coraline.html">BoxTrolls</a></li>
                         <li><a class="dropdown-link kubo-page" href="coraline.html">Kubo</a></li>
-                        <li><a class="dropdown-link missinglink-page" href="coraline.html">Missing Link</a></li>
+                        <li><a class="dropdown-link missinglink-page" id="ultimoEnlace-dropdown" href="coraline.html">Missing Link</a></li>
                     </ul>
                 </li>
                 <li><a class="nav-link news-page" href="news.html">NOTICIAS</a></li>
@@ -73,7 +73,6 @@
                 <!-- d-flex es la propiedad display flex que por defecto colocara los elementos en linea-->
                 <!-- d-flex es la propiedad display gap para el espaciado entre elementos -->
                 <ul class="d-flex gap-2">
-                    <li class="fs-3 text-secondary">Ag 12, 2024</li>
                     <li class="fs-3 text-secondary ">Oct 1, 2024</li>
                     <li class="fs-3 text-secondary"> | </li>
                     <li class="fs-3 text-secondary">Londres, UK</li>
@@ -129,6 +128,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/menu-nav.js"></script>
     <!-- Link de BootsTrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

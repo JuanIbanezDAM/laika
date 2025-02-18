@@ -56,12 +56,12 @@ label {
 button,
 input {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: 700;
 }
 
 a {
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 h1 {
@@ -69,11 +69,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 button {
@@ -132,9 +132,12 @@ button {
   padding: 0 0.5em;
 }
 .container-header__nav .nav-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
   /*   .nav-search{
-        display: flex;
-    } */
+      display: flex;
+  } */
 }
 .container-header__nav .nav-list li {
   display: inline-block;
@@ -145,7 +148,7 @@ button {
   text-align: center;
   align-content: center;
   padding: 0 1.2em;
-  font-size: 1.6em;
+  font-size: 1.4em;
   text-wrap: nowrap;
 }
 .container-header__nav .nav-list li .nav-link:hover, .container-header__nav .nav-list li .nav-icon:hover {
@@ -169,7 +172,7 @@ button {
   display: block;
 }
 .nav-dropdown li .dropdown-link {
-  font-size: 1.6em;
+  font-size: 1.4em;
   display: block;
   padding: 0.5em;
   text-align: initial;
@@ -180,6 +183,15 @@ button {
   color: #d8c615;
 }
 
+/* Para pantallas grandes (más de 1200px) */
+/* Para pantallas medianas (por ejemplo, entre 768px y 1199px) */
+/* Para pantallas pequeñas (por ejemplo, menos de 768px) */
+@media (max-width: 767px) {
+  .container-header__nav .nav-list li {
+    width: 50% !important;
+  }
+}
+/* Para pantallas muy pequeñas (por ejemplo, menos de 480px) */
 footer {
   background-image: url("../assets/images/footer-jpg.jpg");
   background-color: #1d1e20;

@@ -12,12 +12,14 @@
     .section-us {
         @include flex-mix(); //  display: flex       Defecto: row - nowarp
         justify-content: space-around;
+        align-items: center;
 
         .us-container {
             width: 30%;
-            height: 30%;
+            height: auto;
             @include flex-mix(column); //  display: flex       Defecto: column - nowarp
             position: relative;
+            overflow: hidden;
 
             &__img {
                 object-fit: cover;
@@ -34,7 +36,6 @@
 
                 @include flex-mix(column); //  display: flex       Defecto: column - nowarp
                 text-align: center;
-                justify-content: space-between;
 
                 p {
                     text-align: justify;
@@ -45,5 +46,36 @@
             }
 
         }
+    }
+}
+/* Para pantallas grandes (más de 1200px) */
+@media (min-width: 1200px) {
+
+}
+
+/* Para pantallas medianas (por ejemplo, entre 768px y 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .section-us {
+        flex-direction: column !important;
+    }
+    .us-container {
+        width: 50% !important;
+    }
+}
+
+/* Para pantallas pequeñas (por ejemplo, menos de 768px) */
+@media (max-width: 767px) {
+    .section-us {
+        flex-direction: column !important;
+    }
+    .us-container {
+        width: 80% !important;
+    }
+}
+
+/* Para pantallas muy pequeñas (por ejemplo, menos de 480px) */
+@media (max-width: 480px) {
+    .us-container {
+        width: 100% !important;
     }
 }
