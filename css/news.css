@@ -12,14 +12,13 @@ cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principal
 .container-main .container-news {
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   justify-content: center;
   gap: 1.2em;
   padding: 1.2em;
 }
 .container-main .container-news .news-card {
-  max-width: 576px;
+  width: auto;
   max-height: 576px;
   display: flex;
   flex-flow: column nowrap;
@@ -32,15 +31,18 @@ cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principal
 }
 .container-main .container-news .news-card__img {
   width: auto;
-  height: auto;
+  height: 60%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
 .container-main .container-news .news-card__container-info {
   width: 100%;
+  height: 40%;
+  background-color: black;
+  overflow: hidden;
 }
-.container-main .container-news .news-card__container-info h3,
+.container-main .container-news .news-card__container-info h2,
 .container-main .container-news .news-card__container-info p {
   color: #f1f1f1;
 }
@@ -54,3 +56,23 @@ cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principal
   max-height: 100%;
   height: 100%;
 }
+
+/* Para pantallas grandes (mas de 1200px) */
+@media (min-width: 1200px) {
+  .container-news {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Para pantallas medianas (entre 768px y 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container-news {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Para pantallas pequeñas (menos de 768px) */
+@media (max-width: 767px) {
+  .container-news {
+    grid-template-columns: 1fr;
+  }
+}
+/* Para pantallas muy pequeñas (menos de 480px) */

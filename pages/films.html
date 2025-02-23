@@ -29,13 +29,13 @@
         <nav class="container-header__nav">
             <ul class="nav-list">
                 <li>
-                    <a class="nav-link films-page" href="films.html">PELÍCULAS</a>
-                    <ul class="nav-dropdown">
+                    <a class="nav-link films-page" id="enlace-dropdown" href="films.html">PELÍCULAS</a>
+                    <ul class="nav-dropdown" id="lista-dropdown">
                         <li><a class="dropdown-link coraline-page" href="coraline.html">Coraline</a></li>
                         <li><a class="dropdown-link paranorman-page" href="coraline.html">ParaNorman</a></li>
                         <li><a class="dropdown-link boxtrolls-page" href="coraline.html">BoxTrolls</a></li>
                         <li><a class="dropdown-link kubo-page" href="coraline.html">Kubo</a></li>
-                        <li><a class="dropdown-link missinglink-page" href="coraline.html">Missing Link</a></li>
+                        <li><a class="dropdown-link missinglink-page" id="ultimoEnlace-dropdown" href="coraline.html">Missing Link</a></li>
                     </ul>
                 </li>
                 <li><a class="nav-link news-page" href="news.html">NOTICIAS</a></li>
@@ -66,19 +66,19 @@
         <section class="section-films">
             <h1>Nuestras películas</h1>
             <div class="container-films">
-                <a href="pages/coraline.html">
+                <a href="coraline.html">
                     <img src="../assets/svg/caroline-svg.svg" alt="svg de coraline">
                 </a>
-                <a href="pages/coraline.html">
+                <a href="coraline.html">
                     <img src="../assets/svg/paranorman-svg.svg" alt="svg de paranorman">
                 </a>
-                <a href="pages/coraline.html">
+                <a href="coraline.html">
                     <img src="../assets/svg/boxtrolls-svg.svg" alt="svg de boxtrolls">
                 </a>
-                <a href="pages/coraline.html">
+                <a href="coraline.html">
                     <img src="../assets/svg/kubo-svg.svg" alt="svg de kubo">
                 </a>
-                <a href="pages/coraline.html">
+                <a href="coraline.html">
                     <img src="../assets/svg/missinglink-svg.svg" alt="svg de missinglink">
                 </a>
             </div>
@@ -112,8 +112,10 @@
                 <h3>Newsletter</h3>
                 <form action="action_page.php" class="container-form">
                     <div class="container-form__column">
-                        <input type="text" placeholder="Nombre" name="name" required>
-                        <input type="text" placeholder="Email" name="mail" required>
+                        <label for="name">Nombre</label>
+                        <input type="text" placeholder="Nombre" name="name" id="name" required>
+                        <label for="mail">Email</label>
+                        <input type="text" placeholder="Email" name="mail" id="mail"required>
                     </div>
                     <div class="container-form__column">
                         <input type="submit" value="Enviar" class="form-submit button-pre">
@@ -122,6 +124,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/menu-nav.js"></script>
 
 </body>
 

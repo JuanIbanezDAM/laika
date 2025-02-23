@@ -28,13 +28,13 @@
         <nav class="container-header__nav">
             <ul class="nav-list">
                 <li>
-                    <a class="nav-link films-page" href="films.html">PELÍCULAS</a>
-                    <ul class="nav-dropdown">
+                    <a class="nav-link films-page" id="enlace-dropdown" href="films.html">PELÍCULAS</a>
+                    <ul class="nav-dropdown"  id="lista-dropdown">
                         <li><a class="dropdown-link coraline-page" href="coraline.html">Coraline</a></li>
                         <li><a class="dropdown-link paranorman-page" href="coraline.html">ParaNorman</a></li>
                         <li><a class="dropdown-link boxtrolls-page" href="coraline.html">BoxTrolls</a></li>
                         <li><a class="dropdown-link kubo-page" href="coraline.html">Kubo</a></li>
-                        <li><a class="dropdown-link missinglink-page" href="coraline.html">Missing Link</a></li>
+                        <li><a class="dropdown-link missinglink-page" id="ultimoEnlace-dropdown" href="coraline.html">Missing Link</a></li>
                     </ul>
                 </li>
                 <li><a class="nav-link news-page" href="news.html">NOTICIAS</a></li>
@@ -67,7 +67,7 @@
             <a class="news-card news-card1" href="new.html">
                 <img class="news-card__img" src="../assets/images/articulo1-webp.webp" alt="">
                 <div class="news-card__container-info">
-                    <h3> Noticia 1</h3>
+                    <h2> Noticia 1</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eaque aliquid saepe cumque
                         recusandae quos voluptatum odio vitae, aut deserunt consequuntur qui minus ipsam incidunt
                         voluptatem
@@ -81,7 +81,7 @@
             <a class="news-card news-card2" href="new.html">
                 <img class="news-card__img" src="../assets/images/articulo2-webp.webp" alt="">
                 <div class="news-card__container-info">
-                    <h3> Noticia 2</h3>
+                    <h2> Noticia 2</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eaque aliquid saepe cumque
                         recusandae quos voluptatum odio vitae, aut deserunt consequuntur qui minus ipsam incidunt
                         voluptatem
@@ -91,7 +91,7 @@
             <a class="news-card news-card3" href="new.html">
                 <img class="news-card__img" src="../assets/images/articulo3-webp.webp" alt="">
                 <div class="news-card__container-info">
-                    <h3> Noticia 3</h3>
+                    <h2> Noticia 3</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eaque aliquid saepe cumque
                         recusandae quos voluptatum odio vitae, aut deserunt consequuntur qui minus ipsam incidunt
                         voluptatem
@@ -101,7 +101,7 @@
             <a class="news-card news-card4" href="new.html">
                 <img class="news-card__img" src="../assets/images/articulo3-webp.webp" alt="">
                 <div class="news-card__container-info">
-                    <h3> Noticia 3</h3>
+                    <h2> Noticia 3</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eaque aliquid saepe cumque
                         recusandae quos voluptatum odio vitae, aut deserunt consequuntur qui minus ipsam incidunt
                         voluptatem
@@ -111,7 +111,7 @@
             <a class="news-card news-card5" href="new.html">
                 <img class="news-card__img" src="../assets/images/articulo3-webp.webp" alt="">
                 <div class="news-card__container-info">
-                    <h3> Noticia 3</h3>
+                    <h2> Noticia 3</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eaque aliquid saepe cumque
                         recusandae quos voluptatum odio vitae, aut deserunt consequuntur qui minus ipsam incidunt
                         voluptatem
@@ -148,8 +148,10 @@
                 <h3>Newsletter</h3>
                 <form action="action_page.php" class="container-form">
                     <div class="container-form__column">
-                        <input type="text" placeholder="Nombre" name="name" required>
-                        <input type="text" placeholder="Email" name="mail" required>
+                        <label for="name">Nombre</label>
+                        <input type="text" placeholder="Nombre" name="name" id="name" required>
+                        <label for="mail">Email</label>
+                        <input type="text" placeholder="Email" name="mail" id="mail"required>
                     </div>
                     <div class="container-form__column">
                         <input type="submit" value="Enviar" class="form-submit button-pre">
@@ -158,6 +160,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/menu-nav.js"></script>
 
 </body>
 

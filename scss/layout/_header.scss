@@ -3,12 +3,15 @@
 //Contenedor general     logo 20% - nav 80%
 
 .container-header {
+    width: 100%;
+    max-width: 1920px;
     @include flex-mix(); //  display: flex       Defecto: row - nowarp
     padding: map-get($map: $space, $key: "xxs");
 
     &__logo {
         width: 20%;
         padding: map-get($map: $space-x, $key: "xxs");
+
         a {
             img {
                 display: block;
@@ -23,6 +26,8 @@
         padding: map-get($map: $space-x, $key: "xxs");
 
         .nav-list {
+            @include flex-mix(row, wrap);
+            justify-content: end;
 
             li {
                 display: inline-block;
@@ -45,11 +50,12 @@
                 }
 
                 //hover para desplegar el menu peliculas
-                &:hover .nav-dropdown{
+                &:hover .nav-dropdown {
                     display: grid;
                 }
             }
-          /*   .nav-search{
+
+            /*   .nav-search{
                 display: flex;
             } */
         }
@@ -57,7 +63,7 @@
 }
 
 // Menu dropdwon de peliculas
-.nav-dropdown{
+.nav-dropdown {
     display: none;
     width: 100%;
     position: absolute;
@@ -66,18 +72,42 @@
     background-color: map-get($map: $colors, $key: "black");
     z-index: 999;
 
-    li{
+    li {
         display: block;
-        .dropdown-link{
+
+        .dropdown-link {
             font-size: map-get($map: $font-sizes, $key: 3);
             display: block;
             padding: map-get($map: $space, $key: "xxs");
             @include align-mix(initial);
             color: map-get($map: $colors, $key: "white");
-       
+
             &:hover {
                 color: map-get($map: $colors, $key: "yellow");
             }
         }
     }
 }
+
+/* Para pantallas grandes (más de 1200px) */
+@media (min-width: 1200px) {}
+
+/* Para pantallas medianas (por ejemplo, entre 768px y 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {}
+
+/* Para pantallas pequeñas (por ejemplo, menos de 768px) */
+@media (max-width: 767px) {
+
+    .container-header {
+        &__nav {
+            .nav-list {
+                li {
+                    width: 50% !important;
+                }
+            }
+        }
+    }
+}
+
+/* Para pantallas muy pequeñas (por ejemplo, menos de 480px) */
+@media (max-width: 480px) {}

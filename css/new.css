@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/* !!!
+La mayor parte de elementos del proyecto usan estas variables para sus estilos
+cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principales, tamaños de de los títulos, márgenes por defecto de elementos html.
+ !!! */
+/*------------------- Colores --------------------------*/
+/*------------------- Fuentes --------------------------*/
+/*------------------- Margenes o Paddings --------------------------*/
 body {
   /* fuerza el estilo, incluso si hay otras reglas con mayor especificidad */
   margin: 0 auto !important;
@@ -12,6 +20,7 @@ a {
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-color: #1d1e20;
   width: 100%;
   height: 1080px;
 }

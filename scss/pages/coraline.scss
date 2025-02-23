@@ -38,8 +38,13 @@
             background-color: rgba(0, 0, 0, 0.6);
 
             h1 {
+                text-align: start;
                 color: map-get($map: $colors, $key: "yellow");
                 padding: map-get($map: $space-y, $key: "xxs");
+            }
+
+            h2 {
+                @extend h1;
             }
 
             p,
@@ -54,7 +59,7 @@
                 gap: 5em;
 
                 li {
-                    .purchase-label{
+                    .purchase-label {
                         opacity: 0;
                         visibility: hidden;
                         /* transition-property: opacity; */
@@ -68,7 +73,7 @@
                     }
 
                     .purchase-button {
-                        &:hover + .purchase-label {
+                        &:hover+.purchase-label {
                             opacity: 1;
                             visibility: visible;
                         }
@@ -98,7 +103,9 @@
             overflow: hidden;
 
             img {
+                width: 100%;
                 object-fit: cover;
+
             }
 
             &__info {
@@ -114,10 +121,10 @@
 
                 img {
                     position: absolute;
-                    top: -5vh;
                 }
 
-                p {
+                p,
+                h3 {
                     text-align: justify;
                     line-height: 1.5;
                     /* Interlineado del 150% del tamaño de la fuente */
@@ -125,6 +132,7 @@
                     text-shadow: 0 0 0 1px map-get($map: $colors, $key: "black");
                     padding: 0 3em;
                     z-index: 99;
+                    background-color: rgba(0, 0, 0, 0.6);
                 }
             }
 
@@ -144,8 +152,9 @@
         background-size: cover;
 
         &__galery {
-            width: 1000px;
+            max-width: 1000px;
             margin: 0 auto;
+            padding: 1em;
             columns: 300px;
 
             img {
@@ -157,3 +166,48 @@
     }
 
 }
+
+/* Para pantallas grandes (más de 1200px) */
+@media (min-width: 1200px) {
+}
+
+/* Para pantallas medianas (por ejemplo, entre 768px y 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .reparto-container {
+        &__info {
+            p {
+                line-height:normal !important;
+                padding: 0 0.2em !important;
+            }
+        }
+
+    }
+}
+
+/* Para pantallas pequeñas (por ejemplo, menos de 768px) */
+@media (max-width: 767px) {
+    .container-information {
+        ul {
+            li {
+                button {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+    .reparto-container {
+        &__info {
+            p {
+                display: none;
+            }
+            h3 {
+                padding: 0 0.2em !important;
+            }
+        }
+
+    }
+}
+
+/* Para pantallas muy pequeñas (por ejemplo, menos de 480px) */
+@media (max-width: 480px) {}
