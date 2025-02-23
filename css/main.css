@@ -254,16 +254,13 @@ cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principal
   text-align: center;
 }
 .container-main .section-films .container-films {
-  width: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   padding: 1.5em;
-  overflow: hidden;
 }
 .container-main .section-films .container-films a {
-  flex: 1;
+  display: contents;
+  height: 100%;
+  width: 100%;
 }
 .container-main .section-films .container-films a img {
   -o-object-fit: cover;

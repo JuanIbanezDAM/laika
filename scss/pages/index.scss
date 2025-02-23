@@ -29,15 +29,13 @@
         text-align: center;
 
         .container-films {
-            width: 80%;
             margin: 0 auto;
-            @include flex-mix(row, wrap);
-            justify-content: center;
             padding: map-get($map: $space, $key: l);
-            overflow: hidden;
 
             a {
-                flex: 1;
+                display: contents;
+                height: 100%;
+                width: 100%;
 
                 img {
                     object-fit: cover;

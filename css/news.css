@@ -57,22 +57,22 @@ cambiar desde aqui si se quiere cambiar estilos GENERALES como colores principal
   height: 100%;
 }
 
-/* Para pantallas grandes (más de 1200px) */
+/* Para pantallas grandes (mas de 1200px) */
 @media (min-width: 1200px) {
   .container-news {
-    grid-template-columns: repeat(3, 1fr); /* 4 columnas */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-/* Para pantallas medianas (por ejemplo, entre 768px y 1199px) */
+/* Para pantallas medianas (entre 768px y 1199px) */
 @media (min-width: 768px) and (max-width: 1199px) {
   .container-news {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-/* Para pantallas pequeñas (por ejemplo, menos de 768px) */
-/* Para pantallas muy pequeñas (por ejemplo, menos de 480px) */
-@media (max-width: 480px) {
+/* Para pantallas pequeñas (menos de 768px) */
+@media (max-width: 767px) {
   .container-news {
-    grid-template-columns: 1fr; /* 1 columna */
+    grid-template-columns: 1fr;
   }
 }
+/* Para pantallas muy pequeñas (menos de 480px) */
